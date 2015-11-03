@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<provider url="https://issa.beltelecom.by" minAPI="168" externalCommands="prepaid,card">
+	<preference type="text" name="login" title="#login" />
+	<preference type="password" name="password" title="#password" />
+	<preference type="check" name="mode" title="Мультиаккаунты" summary="Для каждой услуги отдельный подаккаунт::Все балансы в одном аккаунте" default="true"/>
+	
+	<var name="login" value="${account.login}"/>
+	<search value="${account.login}" regex="([^@]*)@" group="1">
+		<var name="login"/>
+	</search>
+	
+	<execute value="callback.login"/>
+	
+	<!-- <strong>Единый договор[\s\S]*?<\/div> -->
+	<search regex="&lt;strong&gt;Единый договор[\s\S]*?&lt;\/div&gt;" value="${var.data}">
+		<!-- SendPost\('\?([^']*)'\)" -->
+		<search regex="SendPost\('\?([^']*)'\)&quot;">
+			<foreach>
+				<search regex="SendPost\('\?([^']*)'\)&quot;" group="1" var="data" required="true"/>
+				<search regex="pril_sel=(\d*)" group="1" required="true" var="account_id"/>
+				
+				<request type="POST_DATA" url="${provider.url}/main.html" required="true">
+					<header name="Content-Type" value="application/x-www-form-urlencoded"/>
+					<param name="data" value="${var.data}"/>
+					
+					<var name="account_data"/>
+					<search value="${property.mode}" regex="true">
+						<subaccount id="${var.account_id}">
+							<execute value="callback.parse_account"/>
+							<plan value="${var.plan}"/>
+							<balance value="${var.login}" type="text" name="логин" id="login"/>
+						</subaccount>
+						<else>
+							<execute value="callback.parse_account"/>
+							<plan value="${account.login}"/>
+						</else>
+					</search>
+				</request>
+			</foreach>
+		</search>
+		
+		<else>
+			<var name="account_data"/>
+			<execute value="callback.parse_account"/>
+			<plan value="${var.plan}"/>
+			<balance value="${var.login}" type="text" name="логин" id="login"/>
+		</else>
+	</search>
+	
+	<execute value="callback.logout"/>
+	
+	<!-- Login -->
+	<callback name="login">
+		<var name="login" value="${account.login}"/>
+		<search value="${account.login}" regex="([^@]*)@" group="1">
+			<var name="login"/>
+		</search>
+		
+		<request type="GET" url="${provider.url}/main.html" required="true" charset="UTF-8">
+			<request type="POST" url="${provider.url}/main.html" required="true">
+				<param name="redirect" value="/main.html"/>
+				<param name="oper_user" value="${var.login}"/>
+				<param name="passwd" value="${account.password}"/>
+				
+				<search regex="/logout" required="true" onError="exception.login"/>
+				
+				<var name="data"/>
+			</request>
+		</request>
+	</callback>
+	
+	<!-- Logout -->
+	<callback name="logout">
+		<request type="GET" url="${provider.url}/logout"/>
+	</callback>
+	
+	<callback name="parse_account">
+		
+		<!-- Логин<\/td>\s*<td[^>]*>([^<]*)<\/td> -->
+		<search value="${var.account_data}" regex="Логин&lt;\/td&gt;\s*&lt;td[^&gt;]*&gt;([^&lt;]*)&lt;\/td&gt;" group="1" var="account_id" required="true"/>
+		
+		<!-- Тарифный план на услуги<\/td>\s*<td[^>]*>([^<]*)<\/td> -->
+		<search value="${var.account_data}" regex="Тарифный план на услуги&lt;\/td&gt;\s*&lt;td[^&gt;]*&gt;([^&lt;]*)&lt;\/td&gt;" group="1" var="plan" required="true"/>
+		<!-- Логин<\/td>\s*<td[^>]*>([^<]*)<\/td> -->
+		<search value="${var.account_data}" regex="Логин&lt;\/td&gt;\s*&lt;td[^&gt;]*&gt;([^&lt;]*)&lt;\/td&gt;" group="1" var="login" required="true"/>
+		
+		<search value="${var.account_data}" start="Актуальный баланс:" end="&lt;/b&gt;">
+			<balance units="р" fractional="false" name="${var.plan}"/>
+		</search>
+		
+		<search value="${var.account_data}" regex="statact.html">
+			<!-- https://issa.beltelecom.by/statact.html -->
+			<request type="GET" url="${provider.url}/statact.html">
+				<!-- <td class="border">месяц<\/td>\s*<td[^>]*>([^<]*)<\/td>\s*<td class="border" width="80">([^<]*)<\/td> -->
+				<search regex="&lt;td class=&quot;border&quot;&gt;месяц&lt;\/td&gt;\s*&lt;td[^&gt;]*&gt;([^&lt;]*)&lt;\/td&gt;\s*&lt;td class=&quot;border&quot; width=&quot;80&quot;&gt;([^&lt;]*)&lt;\/td&gt;">
+					<balance value="${group.2}" units="Mb" name="остаток"/>
+					<balance value="${group.1}" units="Mb" name="расход"/>
+				</search>
+			</request>
+		</search>
+	</callback>
+	
+	<callback name="prepaid" value="Обещанный платёж">
+		<dialog type="EDIT" var="prepaidValue">
+			<param name="dialog.title" value="Byfly &gt; Обещанный платёж"/>
+			<param name="dialog.message" value="Введите сумму обещанного платежа (максимум 35.000):"/>
+			<param name="dialog.timeout" value="30"/>
+			<param name="dialog.inputType" value="digits"/>
+			
+			<execute value="callback.login"/>
+			
+			<request type="GET" url="${provider.url}/payact.html" required="true">
+				<!-- <form name="claimpay"[\s\S]*?<\/form> -->
+				<search regex="&lt;form name=&quot;claimpay&quot;[\s\S]*?&lt;\/form&gt;" required="true">
+					<request type="POST" url="${provider.url}/payact.html" required="true">
+						<param include="hidden"/>
+						<param name="clpay" value="${var.prepaidValue}"/>
+						
+						<search regex="успешно зарегистрирован!">
+							<toast value="Обещанный платёж принят!"/>
+							<else>
+								<toast value="Обещанный платёж отклонен!"/>
+							</else>
+						</search>
+					</request>
+				</search>
+			</request>
+			
+			<execute value="callback.logout"/>
+		</dialog>
+	</callback>
+	
+	<callback name="card" value="Экспресс оплата">
+		<dialog type="EDIT" var="cardValue">
+			<param name="dialog.title" value="Byfly &gt; Экспресс оплата"/>
+			<param name="dialog.message" value="Введите номер карты экспресс оплаты (16 цифр):"/>
+			<param name="dialog.timeout" value="60"/>
+			<param name="dialog.inputType" value="digits"/>
+			
+			<search regex="(\d{8})(\d{8})" value="${var.cardValue}">
+				<var name="pin1" value="${group.1}"/>
+				<var name="pin2" value="${group.2}"/>
+				
+				<execute value="callback.login"/>
+				
+				<request type="GET" url="${provider.url}/payact.html" required="true">
+					<!-- <form name="formexpay"[\s\S]*?<\/form> -->
+					<search regex="&lt;form name=&quot;formexpay&quot;[\s\S]*?&lt;\/form&gt;" required="true">
+						<request type="POST" url="${provider.url}/payact.html" required="true">
+							<param include="hidden"/>
+							<param name="expay1" value="${var.pin1}"/>
+							<param name="expay2" value="${var.pin2}"/>
+							
+							<search regex="успешно активирована">
+								<toast value="Карта активирована!"/>
+								<else>
+									<toast value="Карта отклонена!"/>
+								</else>
+							</search>
+						</request>
+					</search>
+				</request>
+				
+				<execute value="callback.logout"/>
+				
+				<else>
+					<toast value="Неправильный номер карты!"/>
+				</else>
+			</search>
+		</dialog>
+	</callback>
+	
+</provider>

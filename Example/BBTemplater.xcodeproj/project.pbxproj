@@ -11,7 +11,20 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		7EF106771BE8EF7600C9D688 /* ContextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF106681BE8EF7600C9D688 /* ContextTests.m */; };
+		7EF106781BE8EF7600C9D688 /* FunctionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF106691BE8EF7600C9D688 /* FunctionsTests.m */; };
+		7EF106791BE8EF7600C9D688 /* fnc_by_prior.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF1066B1BE8EF7600C9D688 /* fnc_by_prior.xml */; };
+		7EF1067A1BE8EF7600C9D688 /* inet_by_byfly.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF1066C1BE8EF7600C9D688 /* inet_by_byfly.xml */; };
+		7EF1067B1BE8EF7600C9D688 /* inet_ru_akado_ural.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF1066D1BE8EF7600C9D688 /* inet_ru_akado_ural.xml */; };
+		7EF1067C1BE8EF7600C9D688 /* s13.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF1066E1BE8EF7600C9D688 /* s13.xml */; };
+		7EF1067D1BE8EF7600C9D688 /* s13_detail.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF1066F1BE8EF7600C9D688 /* s13_detail.xml */; };
+		7EF1067E1BE8EF7600C9D688 /* tel_by_mts.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF106701BE8EF7600C9D688 /* tel_by_mts.xml */; };
+		7EF1067F1BE8EF7600C9D688 /* tel_by_velcom.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF106711BE8EF7600C9D688 /* tel_by_velcom.xml */; };
+		7EF106801BE8EF7600C9D688 /* tel_pl_play.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7EF106721BE8EF7600C9D688 /* tel_pl_play.xml */; };
+		7EF106811BE8EF7600C9D688 /* StringUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF106731BE8EF7600C9D688 /* StringUtilsTests.m */; };
+		7EF106821BE8EF7600C9D688 /* TagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF106741BE8EF7600C9D688 /* TagTests.m */; };
+		7EF106831BE8EF7600C9D688 /* TemplaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF106751BE8EF7600C9D688 /* TemplaterTests.m */; };
+		7EF106841BE8EF7600C9D688 /* ValueProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF106761BE8EF7600C9D688 /* ValueProcessorTests.m */; };
 		B77B4E0EAF0FAC8D368575F6 /* Pods_BBTemplater_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE5EB4F046B28FD53F238EC /* Pods_BBTemplater_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,14 +35,27 @@
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = BBTemplater_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* BBTemplater_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBTemplater_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6BE5EB4F046B28FD53F238EC /* Pods_BBTemplater_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBTemplater_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78AFDB1FE06EA28F64C9DF88 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7EF106681BE8EF7600C9D688 /* ContextTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextTests.m; sourceTree = "<group>"; };
+		7EF106691BE8EF7600C9D688 /* FunctionsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionsTests.m; sourceTree = "<group>"; };
+		7EF1066B1BE8EF7600C9D688 /* fnc_by_prior.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fnc_by_prior.xml; sourceTree = "<group>"; };
+		7EF1066C1BE8EF7600C9D688 /* inet_by_byfly.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = inet_by_byfly.xml; sourceTree = "<group>"; };
+		7EF1066D1BE8EF7600C9D688 /* inet_ru_akado_ural.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = inet_ru_akado_ural.xml; sourceTree = "<group>"; };
+		7EF1066E1BE8EF7600C9D688 /* s13.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = s13.xml; sourceTree = "<group>"; };
+		7EF1066F1BE8EF7600C9D688 /* s13_detail.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = s13_detail.xml; sourceTree = "<group>"; };
+		7EF106701BE8EF7600C9D688 /* tel_by_mts.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tel_by_mts.xml; sourceTree = "<group>"; };
+		7EF106711BE8EF7600C9D688 /* tel_by_velcom.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tel_by_velcom.xml; sourceTree = "<group>"; };
+		7EF106721BE8EF7600C9D688 /* tel_pl_play.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tel_pl_play.xml; sourceTree = "<group>"; };
+		7EF106731BE8EF7600C9D688 /* StringUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtilsTests.m; sourceTree = "<group>"; };
+		7EF106741BE8EF7600C9D688 /* TagTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagTests.m; sourceTree = "<group>"; };
+		7EF106751BE8EF7600C9D688 /* TemplaterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplaterTests.m; sourceTree = "<group>"; };
+		7EF106761BE8EF7600C9D688 /* ValueProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueProcessorTests.m; sourceTree = "<group>"; };
 		C28E03B1A789719DD9FCBE81 /* Pods-BBTemplater_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BBTemplater_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BBTemplater_Tests/Pods-BBTemplater_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +88,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F5AE195388D20070C39A /* BBTemplater_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,8 +108,14 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
+				7EF106681BE8EF7600C9D688 /* ContextTests.m */,
+				7EF106691BE8EF7600C9D688 /* FunctionsTests.m */,
+				7EF1066A1BE8EF7600C9D688 /* resources */,
+				7EF106731BE8EF7600C9D688 /* StringUtilsTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				7EF106741BE8EF7600C9D688 /* TagTests.m */,
+				7EF106751BE8EF7600C9D688 /* TemplaterTests.m */,
+				7EF106761BE8EF7600C9D688 /* ValueProcessorTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -106,6 +138,21 @@
 				155AEA6BC57BCD2FD8A65214 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7EF1066A1BE8EF7600C9D688 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				7EF1066B1BE8EF7600C9D688 /* fnc_by_prior.xml */,
+				7EF1066C1BE8EF7600C9D688 /* inet_by_byfly.xml */,
+				7EF1066D1BE8EF7600C9D688 /* inet_ru_akado_ural.xml */,
+				7EF1066E1BE8EF7600C9D688 /* s13.xml */,
+				7EF1066F1BE8EF7600C9D688 /* s13_detail.xml */,
+				7EF106701BE8EF7600C9D688 /* tel_by_mts.xml */,
+				7EF106711BE8EF7600C9D688 /* tel_by_velcom.xml */,
+				7EF106721BE8EF7600C9D688 /* tel_pl_play.xml */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		DF9C57D386C93A67BCA9F3A2 /* Pods */ = {
@@ -137,7 +184,7 @@
 			);
 			name = BBTemplater_Tests;
 			productName = BBTemplaterTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* BBTemplater_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -179,6 +226,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				7EF1067E1BE8EF7600C9D688 /* tel_by_mts.xml in Resources */,
+				7EF1067B1BE8EF7600C9D688 /* inet_ru_akado_ural.xml in Resources */,
+				7EF1067D1BE8EF7600C9D688 /* s13_detail.xml in Resources */,
+				7EF1067F1BE8EF7600C9D688 /* tel_by_velcom.xml in Resources */,
+				7EF1067C1BE8EF7600C9D688 /* s13.xml in Resources */,
+				7EF106791BE8EF7600C9D688 /* fnc_by_prior.xml in Resources */,
+				7EF1067A1BE8EF7600C9D688 /* inet_by_byfly.xml in Resources */,
+				7EF106801BE8EF7600C9D688 /* tel_pl_play.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				7EF106811BE8EF7600C9D688 /* StringUtilsTests.m in Sources */,
+				7EF106781BE8EF7600C9D688 /* FunctionsTests.m in Sources */,
+				7EF106841BE8EF7600C9D688 /* ValueProcessorTests.m in Sources */,
+				7EF106821BE8EF7600C9D688 /* TagTests.m in Sources */,
+				7EF106831BE8EF7600C9D688 /* TemplaterTests.m in Sources */,
+				7EF106771BE8EF7600C9D688 /* ContextTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,38 @@
+#import <UIKit/UIKit.h>
+
+#import "BBTemplater.h"
+#import "BBTemplaterContext.h"
+#import "BBTemplaterErrors.h"
+#import "BBTemplaterFunctions.h"
+#import "BBTemplaterStringUtils.h"
+#import "BBTemplaterTagsProcessor.h"
+#import "BBTemplaterTagsProvider.h"
+#import "BBTemplaterTag.h"
+#import "BBTemplaterTagCallback.h"
+#import "BBTemplaterTagDialog.h"
+#import "BBTemplaterTagElse.h"
+#import "BBTemplaterTagException.h"
+#import "BBTemplaterTagExecute.h"
+#import "BBTemplaterTagForeach.h"
+#import "BBTemplaterTagHeader.h"
+#import "BBTemplaterTagOut.h"
+#import "BBTemplaterTagParam.h"
+#import "BBTemplaterTagPreference.h"
+#import "BBTemplaterTagProvider.h"
+#import "BBTemplaterTagSearch.h"
+#import "BBTemplaterTagSubaccount.h"
+#import "BBTemplaterTagToast.h"
+#import "BBTemplaterTagVar.h"
+#import "BBTemplaterTagXml.h"
+#import "BBTemplaterTagXpath.h"
+#import "BBTemplaterGenericValueAnalyzer.h"
+#import "BBTemplaterGroupValueAnalyzer.h"
+#import "BBTemplaterPhoneByValueAnalyzer.h"
+#import "BBTemplaterPhoneValueAnalyzer.h"
+#import "BBTemplaterResultValueAnalyzer.h"
+#import "BBTemplaterValueAnalyzer.h"
+#import "BBTemplaterValueProcessor.h"
+
+FOUNDATION_EXPORT double BBTemplaterVersionNumber;
+FOUNDATION_EXPORT const unsigned char BBTemplaterVersionString[];
+

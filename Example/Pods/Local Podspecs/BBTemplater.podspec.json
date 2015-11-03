@@ -1,0 +1,33 @@
+{
+  "name": "BBTemplater",
+  "version": "0.1.0",
+  "summary": "A short description of BBTemplater.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/BBTemplater",
+  "license": "MIT",
+  "authors": {
+    "Alex": "aliaksandr.huryn@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/BBTemplater.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "BBTemplater": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "Sequencer": [
+      "~> 1.0"
+    ],
+    "LPXML": [
+      "~> 0.1"
+    ]
+  }
+}

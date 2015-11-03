@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<provider url="https://www.prior.by" minAPI="152">
+    <var name="priorAPI" value="${provider.url}/api/ibapi.axd"/>
+
+    <request type="GET" url="${var.priorAPI}?action=setup" required="true" charset="UTF-8">
+        <var name="token" function="PKCS5,OSMqNE11fGUoLDg5Mmk1WQ==,Nm4wMy5nOiM3JSpWfnwzOXFpNzRcfjB5MVNEKl8mWkw=,base64"/>
+        <var name="password" value="${account.password}" function="encrypt,SHA-512,hex"/>
+
+        <request type="POST" url="${var.priorAPI}?action=login" required="true">
+            <param name="UserName" value="${account.login}"/>
+            <param name="UserPassword" value="${var.password}"/>
+            <param name="Token" value="${var.token}"/>
+
+            <search regex="&lt;UserSession&gt;([^&lt;]*)&lt;/UserSession&gt;" group="1" var="session" required="true" onError="exception.login"/>
+        </request>
+    </request>
+
+    <!-- Cards -->
+    <request type="POST" url="${var.priorAPI}?action=GateWay&amp;target=Android" required="true">
+        <header name="Base64Fields" value="XML"/>
+        <param name="Template" value="CardList"/>
+
+        <search regex="&lt;Cards&gt;[\s\S]*?&lt;/Cards&gt;">
+            <search regex="&lt;Card[\s\S]*?&lt;/Card&gt;">
+                <foreach>
+                    <search regex="&lt;Card id=&quot;(\d*)&quot;&gt;" group="1" var="id"/>
+                    <subaccount id="${var.id}">
+                        <search regex="&lt;CustomSynonym&gt;([\s\S]*?)&lt;/CustomSynonym&gt;" group="1"><plan/></search>
+                        <search regex="&lt;CONTRACT_CURR&gt;([\s\S]*?)&lt;/CONTRACT_CURR&gt;" group="1" var="cur"/>
+                        <search regex="&lt;AMOUNT_AVAILABLE&gt;([\s\S]*?)&lt;/AMOUNT_AVAILABLE&gt;" group="1" var="balance">
+                            <search regex="BYR" value="${var.cur}">
+                                <balance value="${var.balance}" units="р" fractional="false" name="баланс"/>
+                            </search>
+                            <search regex="USD" value="${var.cur}">
+                                <balance value="${var.balance}" units="$" name="баланс"/>
+                            </search>
+                            <search regex="EUR" value="${var.cur}">
+                                <balance value="${var.balance}" units="€" name="баланс"/>
+                            </search>
+                        </search>
+                        <search regex="&lt;Synonym&gt;([\s\S]*?)&lt;/Synonym&gt;" group="1">
+                            <balance type="text" value="${result.1}" name="имя карты"/>
+                        </search>
+                        <search regex="&lt;CARD_EXPIRE&gt;([\s\S]*?)&lt;/CARD_EXPIRE&gt;" group="1">
+                            <balance type="text" name="срок действия"/>
+                        </search>
+                        <search regex="&lt;CardType&gt;([\s\S]*?)&lt;/CardType&gt;" group="1">
+                            <balance type="text" name="тип карты"/>
+                        </search>
+                    </subaccount>
+                </foreach>
+            </search>
+        </search>
+    </request>
+
+    <!-- Contracts -->
+    <request type="POST" url="${var.priorAPI}?action=GateWay&amp;target=Android" required="true">
+        <header name="Base64Fields" value="XML"/>
+        <param name="Template" value="ContractList"/>
+        <param name="ContractType" value="4"/>
+
+        <search regex="&lt;Contract[\s\S]*?&lt;/Contract&gt;">
+            <foreach>
+                <search regex="&lt;Contract ContractID=&quot;([^&quot;]*)&quot;&gt;" group="1" var="id"/>
+                <subaccount id="${var.id}">
+                    <search regex="&lt;Description&gt;([\s\S]*?)&lt;/Description&gt;" group="1"><plan/></search>
+                    <search regex="&lt;CurrCode&gt;([\s\S]*?)&lt;/CurrCode&gt;" group="1" var="cur"/>
+                    <search regex="&lt;ContractRest&gt;([\s\S]*?)&lt;/ContractRest&gt;" group="1" var="balance">
+                        <search regex="," replace=" " var="balance"/>
+                        <search regex="BYR" value="${var.cur}">
+                            <balance value="${var.balance}" units="р" fractional="false" name="баланс"/>
+                        </search>
+                        <search regex="USD" value="${var.cur}">
+                            <balance value="${var.balance}" units="$" name="баланс"/>
+                        </search>
+                        <search regex="EUR" value="${var.cur}">
+                            <balance value="${var.balance}" units="€" name="баланс"/>
+                        </search>
+                    </search>
+                    <search regex="&lt;Synonym&gt;([\s\S]*?)&lt;/Synonym&gt;" group="1">
+                        <balance type="text" value="${result.1}" name="имя контракта"/>
+                    </search>
+                    <search regex="&lt;FinishDate&gt;([\s\S]*?)&lt;/FinishDate&gt;" group="1">
+                        <balance type="text" name="дата окончания"/>
+                    </search>
+                    <search regex="&lt;ContracNum&gt;([\s\S]*?)&lt;/ContracNum&gt;" group="1">
+                        <balance type="text" name="номер контракта"/>
+                    </search>
+                </subaccount>
+            </foreach>
+        </search>
+    </request>
+
+    <!-- TODO -->
+    <request type="POST" url="${var.priorAPI}?action=GateWay&amp;target=Android" required="true">
+        <header name="Base64Fields" value="XML"/>
+        <param name="Template" value="ContractList"/>
+        <param name="ContractType" value="7"/>
+
+    </request>
+
+    <!-- TODO -->
+    <request type="POST" url="${var.priorAPI}?action=GateWay&amp;target=Android" required="true">
+        <header name="Base64Fields" value="XML"/>
+        <param name="Template" value="ContractList"/>
+        <param name="ContractType" value="3"/>
+
+    </request>
+
+</provider>

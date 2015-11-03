@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<provider url="https://m24.play.pl/mplay24-lajt" minAPI="181">
+    <preference type="text" name="login" title="#login"/>
+    <preference type="password" name="password" title="#password"/>
+
+    <request type="GET" url="${provider.url}/home" required="true" charset="UTF-8">
+        <search regex="&lt;form method=&quot;post&quot; action=&quot;([^&quot;]*)&quot;&gt;" group="1" required="true">
+            <var name="url"/>
+        </search>
+        <request type="POST" url="${var.url}" required="true">
+            <param include="hidden"/>
+
+            <request type="POST" url="https://logowanie.play.pl/opensso/logowanie" required="true">
+                <param name="IDToken1" value="${account.login}"/>
+                <param name="IDToken2" value="${account.password}"/>
+                <param include="hidden"/>
+
+                <search regex="security/postLogin" required="true" onError="exception.login"/>
+
+                <request type="POST" url="${provider.url}/security/postLogin" required="true">
+                    <param include="hidden"/>
+                </request>
+            </request>
+        </request>
+    </request>
+
+    <request type="GET" url="${provider.url}/home?wicket:bookmarkablePage=:pl.p4.mplay24.view.pages.AccountState" required="true">
+        <!-- accountUnpaid">Konto</a>\s*<span class="amounts"><strong>([^<]*)</strong> -->
+        <search regex="accountUnpaid&quot;&gt;Konto&lt;/a&gt;\s*&lt;span class=&quot;amounts&quot;&gt;&lt;strong&gt;([^&lt;]*)&lt;/strong&gt;" group="1">
+            <balance units="zł" name="Konto"/>
+        </search>
+        <!-- accountPackagePLN">Pakiet Złotówek</a>\s*<span class="amounts"><strong>([^<]*)</strong> -->
+        <search regex="accountPackagePLN&quot;&gt;Pakiet Złot&#243;wek&lt;/a&gt;\s*&lt;span class=&quot;amounts&quot;&gt;&lt;strong&gt;([^&lt;]*)&lt;/strong&gt;" group="1">
+            <balance units="zł" name="Pakiet Złotówek"/>
+        </search>
+
+        <!-- <ul class="sub combined">[\s\S]*?</ul> -->
+        <search regex="&lt;ul class=&quot;sub combined&quot;&gt;[\s\S]*?&lt;/ul&gt;">
+            <foreach>
+                <!-- <a href="[^"]*">([^<]*)</a>\s*<span><strong>([\d,]*)</strong>\s*([^<]*)</span> -->
+                <search regex="&lt;a href=&quot;[^&quot;]*&quot;&gt;([^&lt;]*)&lt;/a&gt;\s*&lt;span&gt;&lt;strong&gt;([\d,]*)&lt;/strong&gt;\s*([^&lt;]*)&lt;/span&gt;">
+                    <balance value="${group.2}" units="${group.3}" name="${group.1}"/>
+                </search>
+                <!-- <a href="[^"]*">([^<]*)</a>\s*<span><strong>(\d*):\d*</strong>\s*([^<]*)</span> -->
+                <search regex="&lt;a href=&quot;[^&quot;]*&quot;&gt;([^&lt;]*)&lt;/a&gt;\s*&lt;span&gt;&lt;strong&gt;(\d*):\d*&lt;/strong&gt;\s*([^&lt;]*)&lt;/span&gt;">
+                    <balance value="${group.2}" units="min" name="${group.1}"/>
+                </search>
+                <!-- <p>\s*([\s\S]*?)\s*<span><strong>(\d{4}-\d{2}-\d{2})</strong></span> -->
+                <search regex="&lt;p&gt;\s*([\s\S]*?)\s*&lt;span&gt;&lt;strong&gt;(\d{4}-\d{2}-\d{2})&lt;/strong&gt;&lt;/span&gt;">
+                    <balance value="${group.2}" name="${group.1}" type="text"/>
+                </search>
+            </foreach>
+        </search>
+
+        <plan value="${account.login}"/>
+    </request>
+
+    <request type="GET" url="${provider.url}/home?wicket:interface=:1:topLogoutLink::ILinkListener::"/>
+</provider>

@@ -1,0 +1,14 @@
+<request url="http://s13.ru/feed">
+	<search regex="&lt;item&gt;[\s\S]*?&lt;/item&gt;">
+		<foreach>
+			<search regex="&lt;title&gt;([\s\S]*?)&lt;/title&gt;" var="title" group="1"/>
+			<search regex="&lt;description&gt;([\s\S]*?)&lt;/description&gt;" var="description" group="1"/>
+			<search regex="&lt;link&gt;([\s\S]*?)&lt;/link&gt;" var="link" group="1"/>
+			<out name="news">
+				<param name="title" value="${var.title}"/>
+				<param name="description" value="${var.description}"/>
+				<param name="link" value="${var.link}"/>
+			</out>
+		</foreach>
+	</search>
+</request>

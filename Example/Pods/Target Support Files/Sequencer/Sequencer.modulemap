@@ -1,0 +1,6 @@
+framework module Sequencer {
+  umbrella header "Sequencer-umbrella.h"
+
+  export *
+  module * { export * }
+}

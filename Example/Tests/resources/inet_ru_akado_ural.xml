@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<provider url="https://stat.akado-ural.ru">
+    <request type="GET" url="${provider.url}" required="true" charset="utf-8">
+        <request type="POST" url="${provider.url}/login.php?in=1" required="true">
+            <param include="hidden"/>
+            <param name="login" value="${account.login}"/>
+            <param name="pass" value="${account.password}"/>
+            <search regex="/logout.php" required="true" onError="exception.login"/>
+            <search regex="&lt;th&gt;Баланс:&lt;/th&gt;[^&lt;]*&lt;td&gt;([^&lt;]*)&lt;/td&gt;" group="1" required="true">
+                <balance units="р" name="Баланс" id="р1"/>
+            </search>
+            <search regex="&lt;th&gt;Кредит:&lt;/th&gt;[^&lt;]*&lt;td&gt;([^&lt;]*)&lt;/td&gt;" group="1">
+                <balance units="р" name="Кредит" id="р2"/>
+            </search>
+            <search regex="Тарифный план:[^&lt;]*&lt;/td&gt;[^&lt;]*&lt;td[^&gt;]*&gt;([^&gt;]*)&lt;/td&gt;" group="1">
+                <plan/>
+            </search>
+        </request>
+    </request>
+    <request type="GET" url="${provider.url}logout.php"/>
+</provider>

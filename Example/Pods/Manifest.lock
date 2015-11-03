@@ -1,0 +1,20 @@
+PODS:
+  - BBTemplater (0.1.0):
+    - LPXML (~> 0.1)
+    - Sequencer (~> 1.0)
+  - LPXML (0.1.0)
+  - Sequencer (1.0.1)
+
+DEPENDENCIES:
+  - BBTemplater (from `../`)
+
+EXTERNAL SOURCES:
+  BBTemplater:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BBTemplater: b13ad44efbbdd10ab4ff56fc9133d444b4d7ed21
+  LPXML: 350d6dc16cb0d493655a9127860ff70ef22cc60e
+  Sequencer: 53040fea35ecde55ba9cdb3a505a00cfb0e797b2
+
+COCOAPODS: 0.39.0

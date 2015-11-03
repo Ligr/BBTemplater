@@ -1,0 +1,52 @@
+<provider url="https://my.velcom.by" minAPI="169" minUpdateInterval="1800">
+    <preference type="text" name="login" title="#phone_num" inputType="phone" summary="Номер телефона в международном формате (например, +375 44 1234567)"/>
+    <preference type="password" name="password" title="#password"/>
+
+    <request type="POST_DATA" url="https://my.velcom.by/openapi" required="true" charset="UTF-8">
+        <header name="Content-Type" value="text/xml;charset=utf-8"/>
+        <header name="SOAPAction" value="/VPartnerGw/OpenAPIGetExtendedBalanceV1"/>
+        <param name="data" value="&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:SOAP-ENC=&quot;http://schemas.xmlsoap.org/soap/encoding/&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;SOAP-ENV:Body&gt;&lt;m:OpenAPIGetExtendedBalanceV1Request xmlns:m=&quot;http://eai.velcom.by/VPartnerGw&quot;&gt;&lt;IssaLogin&gt;375${phone.codeBY}${phone.numberBY}&lt;/IssaLogin&gt;&lt;IssaPassword&gt;${account.password}&lt;/IssaPassword&gt;&lt;ApplicationCode&gt;Balance BY&lt;/ApplicationCode&gt;&lt;/m:OpenAPIGetExtendedBalanceV1Request&gt;&lt;/SOAP-ENV:Body&gt;&lt;/SOAP-ENV:Envelope&gt;"/>
+
+        <search regex="&gt;RC97&lt;"><exception value="exception.login"/></search>
+        <search regex="&gt;RC99&lt;"><exception value="Ошибка сервера"/></search>
+
+        <plan value="+375 ${phone.codeBY} ${phone.numberBY}"/>
+
+        <!-- <BalanceValue[^>]*>([^<]*)<\/BalanceValue> -->
+        <search regex="&lt;BalanceValue[^&gt;]*&gt;([^&lt;]*)&lt;\/BalanceValue&gt;" group="1" required="true">
+            <balance units="р" fractional="false" name="баланс" index="1"/>
+        </search>
+
+        <search regex="&lt;FreeMinutesToAnyNetwork[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeMinutesToAnyNetwork&gt;" group="1">
+            <balance units="мин" fractional="false" name="во все сети"/>
+        </search>
+        <search regex="&lt;FreeMinutesToVelcomNetwork[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeMinutesToVelcomNetwork&gt;" group="1">
+            <balance units="мин" fractional="false" name="внутри сети"/>
+        </search>
+        <search regex="&lt;FreeMinutesToOtherNetworks[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeMinutesToOtherNetworks&gt;" group="1">
+            <balance units="мин" fractional="false" name="в другие сети"/>
+        </search>
+        <search regex="&lt;FreeMinutesToFavoriteNumbers[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeMinutesToFavoriteNumbers&gt;" group="1">
+            <balance units="мин" fractional="false" name="на &#171;любимые&#187; номера"/>
+        </search>
+
+        <search regex="&lt;FreeSms[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeSms&gt;" group="1">
+            <balance units="sms" fractional="false"/>
+        </search>
+        <search regex="&lt;FreeMms[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeMms&gt;" group="1">
+            <balance units="mms" fractional="false"/>
+        </search>
+
+        <search regex="&lt;FreeMB[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeMB&gt;" group="1">
+            <balance units="Mb" name="трафик"/>
+        </search>
+        <search regex="&lt;FreeDayMB[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeDayMB&gt;" group="1">
+            <balance units="Mb" name="трафик (день)"/>
+        </search>
+        <search regex="&lt;FreeNightMB[^&gt;]*&gt;([^&lt;]*)&lt;\/FreeNightMB&gt;" group="1">
+            <balance units="Mb" name="трафик (ночь)"/>
+        </search>
+
+    </request>
+
+</provider>

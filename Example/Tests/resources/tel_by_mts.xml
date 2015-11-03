@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<provider url="https://ihelper.mts.by/SelfCarePda" minAPI="168">
+    <preference type="text" name="login" title="#phone_num" inputType="phone" summary="Номер телефона в международном формате (например, +375 29 7654321)"/>
+    <preference type="password" name="password" title="#password" summary="Для получения пароля со своего телефона наберите: *111*17# или позвоните по номеру 087021"/>
+
+    <search value="${phone.country}" regex="375" required="true" onError="exception.phone"/>
+    <request type="POST"
+             url="${provider.url}/Security.mvc/LogOn?returnLink=https%3A%2F%2Fihelper.mts.by%2FSelfCarePda%2FHome.mvc"
+             required="true" charset="UTF-8">
+        <param name="username" value="${phone.codeBY}${phone.numberBY}"/>
+        <param name="password" value="${account.password}"/>
+
+        <search regex="Ваш телефон" required="true" onError="exception.login"/>
+        <search start="арифный" end="&lt;/strong&gt;" regex="&lt;strong&gt;.*">
+            <plan/>
+        </search>
+
+        <request type="GET" url="${provider.url}/Account.mvc/Status" required="true" onError="exception.unavailable">
+            <search start="текущий баланс" end="руб">
+                <balance units="р" fractional="false" name="баланс" id="р1"/>
+            </search>
+            <search start="&lt;ul&gt;&lt;li&gt;" end="&lt;/ul" offset="1" regex="&lt;li&gt;[^&gt;]+&lt;/li&gt;">
+                <foreach>
+                    <var name="result" value="${result.1}" encode="toLowerCase"/>
+                    <var name="balance" value="${var.result}" encode="toLowerCase"/>
+                    <search value="${var.result}" regex=":.*">
+                        <var name="balance" encode="toLowerCase"/>
+                    </search>
+                    <!--<var name="balance" value="new"/>-->
+                    <!--<search value="${var.result}" regex=":"><search value="${var.result}" start=":"><var name="balance" encode="toLowerCase"/></search></search>-->
+                    <!--<search value="${var.balance}" regex="new"><var name="balance" value="${var.result}" encode="toLowerCase"/></search>-->
+
+                    <search value="${var.result}" regex="мб|mb">
+                        <balance value="${var.balance}" units="Mb"/>
+                    </search>
+                    <search value="${var.result}" regex="кб|kb">
+                        <balance value="${var.balance}" units="Kb" fractional="false"/>
+                    </search>
+                    <search value="${var.result}" regex="мин">
+                        <balance value="${var.balance}" units="мин" fractional="false"/>
+                    </search>
+                    <search value="${var.result}" regex="сек">
+                        <balance value="${var.balance}" units="сек" fractional="false"/>
+                    </search>
+                    <!--<search value="${var.result}" regex="руб">-->
+                        <!--<balance value="${var.balance}" units="р" fractional="false"/>-->
+                    <!--</search>-->
+                    <search value="${var.balance}" regex="шт">
+                        <balance value="${var.balance}" units="sms" fractional="false"/>
+                        <else>
+                            <search value="${var.result}" regex="sms|смс">
+                                <balance value="${var.balance}" units="sms" fractional="false"/>
+                            </search>
+                            <search value="${var.result}" regex="mms|ммс">
+                                <balance value="${var.balance}" units="mms" fractional="false"/>
+                            </search>
+                        </else>
+                    </search>
+                    <search value="${var.result}" regex="остаток пакета минут: \d*">
+                        <balance value="${var.balance}" units="мин" fractional="false" name="пакет минут"/>
+                    </search>
+                </foreach>
+            </search>
+            <!--<search start="Израсходовано по номеру" end="&lt;/p&gt;" regex="&lt;strong&gt;.*"><balance units="р" fractional="false" id="р2"/></search>-->
+            <search regex="Израсходовано по номеру[^:]*:([^&lt;]*)руб.&lt;" group="1">
+                <balance units="р" fractional="false" name="расход за месяц" id="р2"/>
+            </search>
+            <search start="Сумма кредитного" end="&lt;/strong&gt;" regex="&lt;strong&gt;.*">
+                <balance units="р" fractional="false" name="кредит" id="р3"/>
+            </search>
+        </request>
+
+        <request type="GET" url="${provider.url}/Security.mvc/LogOff"/>
+    </request>
+</provider>

@@ -1,0 +1,5 @@
+<request url="${url}">
+	<search regex="&lt;div class=&quot;itemtext&quot;&gt;([\s\S]*?)&lt;script" group="1">
+		<out name="text"/>
+	</search>
+</request>

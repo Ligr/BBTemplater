@@ -1,0 +1,6 @@
+framework module BBTemplater {
+  umbrella header "BBTemplater-umbrella.h"
+
+  export *
+  module * { export * }
+}
