@@ -10,6 +10,7 @@
 #import <XCTest/XCTest.h>
 
 #import "BBTemplater.h"
+#import "BBTemplaterTag.h"
 
 @interface TemplaterTests : XCTestCase
 
@@ -25,6 +26,23 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void)testRegisterTag {
+	XCTestExpectation *expectation = [self expectationWithDescription:@"parser"];
+	NSString *template = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<tst />";
+	BBTemplater *templater = [[BBTemplater alloc] initWithTemplate:template data:nil];
+	[templater process:^(NSError *error) {
+		XCTAssertNotNil(error);
+		BBTemplater *templater2 = [[BBTemplater alloc] initWithTemplate:template data:nil];
+		[templater2 registerTag:[BBTemplaterTag class] withName:@"tst"];
+		[templater2 process:^(NSError *error) {
+			XCTAssertNil(error);
+			[expectation fulfill];
+		}];
+	}];
+	
+	[self waitForExpectationsWithTimeout:60 handler:nil];
 }
 
 //- (void)testTemplater {

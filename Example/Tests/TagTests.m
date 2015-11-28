@@ -54,7 +54,7 @@
 	[processor process:^(NSError *error) {
 		[expectation fulfill];
 		XCTAssertNil(error);
-		NSString *res = [context storedValueForKey:@"value.res"];
+		NSString *res = [context storedValueForKey:@"var.res"];
 		XCTAssertNotNil(res);
 		XCTAssertEqualObjects(res, @"123");
 	}];

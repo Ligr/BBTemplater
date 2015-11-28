@@ -16,5 +16,6 @@
 - (void)setDataEncoding:(NSStringEncoding)encoding;
 - (id)variableForKey:(NSString *)key;
 - (NSArray *)outValuesWithName:(NSString *)name;
+- (void)registerTag:(Class)tag withName:(NSString *)name;
 
 @end

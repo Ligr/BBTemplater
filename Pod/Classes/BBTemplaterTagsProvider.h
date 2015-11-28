@@ -14,5 +14,6 @@
 @interface BBTemplaterTagsProvider : NSObject
 
 - (BBTemplaterTag *)tagWithName:(NSString *)name attributes:(NSDictionary *)attributes context:(BBTemplaterContext *)context;
+- (void)registerTag:(Class)tag withName:(NSString *)name;
 
 @end

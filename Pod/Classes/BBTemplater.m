@@ -62,6 +62,10 @@
 	return [_context outValuesWithName:name];
 }
 
+- (void)registerTag:(Class)tag withName:(NSString *)name {
+	[_tagsProvider registerTag:tag withName:name];
+}
+
 #pragma mark - Private
 
 - (void)setup {

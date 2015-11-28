@@ -27,7 +27,7 @@
 #import "BBTemplaterTagXpath.h"
 
 @interface BBTemplaterTagsProvider () {
-	NSDictionary *_tagToClassBinding;
+	NSMutableDictionary *_tagToClassBinding;
 }
 
 @end
@@ -45,6 +45,10 @@
 	return tag;
 }
 
+- (void)registerTag:(Class)tag withName:(NSString *)name {
+	_tagToClassBinding[name] = tag;
+}
+
 #pragma mark - Private
 
 - (id)init {
@@ -56,7 +60,7 @@
 }
 
 - (void)setup {
-	_tagToClassBinding = @{
+	_tagToClassBinding = [@{
 						  @"root": [BBTemplaterTag class],
 						  [BBTemplaterTagProvider tagName]: [BBTemplaterTagProvider class],
 						  [BBTemplaterTagParam tagName]: [BBTemplaterTagParam class],
@@ -75,7 +79,7 @@
 						  [BBTemplaterTagException tagName]: [BBTemplaterTagException class],
 						  [BBTemplaterTagXml tagName]: [BBTemplaterTagXml class],
 						  [BBTemplaterTagXpath tagName]: [BBTemplaterTagXpath class]
-						  };
+						  } mutableCopy];
 }
 
 @end
