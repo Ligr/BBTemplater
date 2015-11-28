@@ -68,7 +68,9 @@
 		[tag willStartWithData:srcData];
 		[tag process:^(id data, NSError *error) {
 #if DEBUG
-			NSLog(@"\n====================\ninput data:\n%@\n==========\n%@\n==========\nresults:\n%@\nerror: %@\n====================", srcData, tag, data, error);
+			if (error) {
+				NSLog(@"\n====================\ninput data:\n%@\n==========\n%@\n==========\nresults:\n%@\nerror: %@\n====================", srcData, tag, data, error);
+			}
 #endif
 			if (error || (tag.required && data == nil)) {
 				if (!error) {
