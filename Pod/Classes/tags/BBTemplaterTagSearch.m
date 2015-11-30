@@ -134,6 +134,7 @@
 		[self.context pushSearchGroup:groupValues];
 		callback(result, error);
 	} else {
+		[_elseTag willStartWithData:initialData];
 		[_elseTag process:^(id data, NSError *error) {
 			callback(data, error);
 		}];
@@ -172,7 +173,9 @@
 
 - (void)didEnd {
 	[super didEnd];
-	[self.context popSearchGroup];
+	if (_needSubtagsProcessing || !_elseTag) {
+		[self.context popSearchGroup];
+	}
 }
 
 #pragma mark - Private
