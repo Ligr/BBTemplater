@@ -38,12 +38,16 @@
 }
 
 - (void)process:(void(^)(NSError *error))callback {
-	_templaterCallback = callback;
-	_parser = [[NSXMLParser alloc] initWithData:[_template dataUsingEncoding:NSUTF8StringEncoding]];
-	_parser.delegate = self;
-	dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-		[_parser parse];
-	});
+	if ([_template stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0) {
+		_templaterCallback = callback;
+		_parser = [[NSXMLParser alloc] initWithData:[_template dataUsingEncoding:NSUTF8StringEncoding]];
+		_parser.delegate = self;
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+			[_parser parse];
+		});
+	} else {
+		callback(nil);
+	}
 }
 
 - (void)registerVariables:(NSDictionary *)variables {
