@@ -27,7 +27,6 @@
 		2DD8B18103193D8ED330313F30DCEE11 /* BBTemplaterTagToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 128EE6745A0FF27F6A67DAA70FFE40DC /* BBTemplaterTagToast.m */; };
 		2ECE858CE142A845E518FA3F0936B9F0 /* BBTemplaterPhoneByValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B73F40A92D78A42386125A9412B14C /* BBTemplaterPhoneByValueAnalyzer.m */; };
 		382BFD8C2F2B40AB13C567E6B1FE3C31 /* BBTemplaterTagPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4FD372CFB6D87339F625A96971EE06 /* BBTemplaterTagPreference.m */; };
-		3941D5F3972EDDE10D4CF29FE500EF46 /* BBTemplaterTagDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = C8459AF8691E0F798264DEEE4E04751E /* BBTemplaterTagDialog.m */; };
 		3B42BBA8479E21974F9847D8E926D4B6 /* BBTemplaterGenericValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E66347D9077455D68CFD5EBD8B2D0F /* BBTemplaterGenericValueAnalyzer.m */; };
 		452E836762E24738B6A54C3866BA0D3D /* BBTemplaterTagsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3514095C87BD24728C270C0EAB8587 /* BBTemplaterTagsProvider.m */; };
 		490046622935CBA75E235793733FF910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
@@ -88,7 +87,6 @@
 		F04F2EC55792084F925C90D9D784FBFC /* Sequencer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F9AFC6DBE734C70C0265CF8ADF1B9E /* Sequencer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0A7470E17AF3437891E0DF992DE9A97 /* BBTemplaterTagXpath.h in Headers */ = {isa = PBXBuildFile; fileRef = A9BC189D0753A107721A609F437F41A8 /* BBTemplaterTagXpath.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9DDAC7D79440500887C4C98418CFB7A /* BBTemplaterValueProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 908BC6ED12623944AA329B4CDEA4098A /* BBTemplaterValueProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAE59EE6B928DA56C4B66985C3851698 /* BBTemplaterTagDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = F8905F1F40B020B6E40415E995AA309C /* BBTemplaterTagDialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFA560BD755F395DB25F09A3E3776B4E /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FBD4F5724297E4B28EFB06B42CC11A /* Sequencer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -228,7 +226,6 @@
 		B7BB21D38B6E2818597999F1486E3D12 /* LPXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPXML-dummy.m"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF0F4945879E0C21D9B9CBB9A66C913E /* LPXML.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPXML.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8459AF8691E0F798264DEEE4E04751E /* BBTemplaterTagDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagDialog.m; sourceTree = "<group>"; };
 		C9F7FE4C126C99B2BDB943AD0A98CF84 /* BBTemplaterTagXml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagXml.h; sourceTree = "<group>"; };
 		CA92C47BF6C3809896D3F6A62A6885A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB61257BE2073FB60F4F60DB3762138E /* BBTemplaterTagForeach.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagForeach.m; sourceTree = "<group>"; };
@@ -248,7 +245,6 @@
 		E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPXML.xcconfig; sourceTree = "<group>"; };
 		F114BBE2E7DBCDD3C62AC9DA657EB96B /* Pods-BBTemplater_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BBTemplater_Tests-umbrella.h"; sourceTree = "<group>"; };
 		F1258D83BE4E47BAEA3054D88385083F /* BBTemplaterTagHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagHeader.h; sourceTree = "<group>"; };
-		F8905F1F40B020B6E40415E995AA309C /* BBTemplaterTagDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagDialog.h; sourceTree = "<group>"; };
 		FFB4988604D20012F98AE1A393510737 /* BBTemplater.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BBTemplater.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -464,8 +460,6 @@
 				A81153A3C86D5EEDDAD62FD7168A9109 /* BBTemplaterTag.m */,
 				136BB1B3D9CE4F4AFE4C0D66A7210459 /* BBTemplaterTagCallback.h */,
 				A04A2350D5678DC2E8F23D352AE876A9 /* BBTemplaterTagCallback.m */,
-				F8905F1F40B020B6E40415E995AA309C /* BBTemplaterTagDialog.h */,
-				C8459AF8691E0F798264DEEE4E04751E /* BBTemplaterTagDialog.m */,
 				750D2314F76FB1936267CDBD1AA0AE0C /* BBTemplaterTagElse.h */,
 				4600F8DAE2BD123EA562D836013CAF01 /* BBTemplaterTagElse.m */,
 				DCC3F02B268EB687D1CCEEA9FEB845DF /* BBTemplaterTagException.h */,
@@ -576,7 +570,6 @@
 				E05A9B10E5DE86E103B4B130F0994A61 /* BBTemplaterStringUtils.h in Headers */,
 				9E25D58AA1A1296CDA0A45DE7683265C /* BBTemplaterTag.h in Headers */,
 				5DBE45527AAFF21E61CAA34FFEE11BB1 /* BBTemplaterTagCallback.h in Headers */,
-				FAE59EE6B928DA56C4B66985C3851698 /* BBTemplaterTagDialog.h in Headers */,
 				90C84A362614FDFC4FB2C7B4BB762DB7 /* BBTemplaterTagElse.h in Headers */,
 				9DFB4CC2E46F520FE32521E914BA2ECC /* BBTemplaterTagException.h in Headers */,
 				AEFC05595359EADB4D08B32ED62378B4 /* BBTemplaterTagExecute.h in Headers */,
@@ -846,7 +839,6 @@
 				89C95C4851E2F565C8835DDB6F40B730 /* BBTemplaterStringUtils.m in Sources */,
 				84DD56EA090178C9B3587BBFA6A0106C /* BBTemplaterTag.m in Sources */,
 				C032CE84E79B658FD57C0B4CFF51F3FF /* BBTemplaterTagCallback.m in Sources */,
-				3941D5F3972EDDE10D4CF29FE500EF46 /* BBTemplaterTagDialog.m in Sources */,
 				C24A13ECC3FE40C80AEB00E2885B7148 /* BBTemplaterTagElse.m in Sources */,
 				E93A2291E06C4F7C371601E9B9286CBB /* BBTemplaterTagException.m in Sources */,
 				2A7DA6E737DD314E4CB3F39290C19C6F /* BBTemplaterTagExecute.m in Sources */,

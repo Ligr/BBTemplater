@@ -20,7 +20,6 @@
 #import "BBTemplaterTagExecute.h"
 #import "BBTemplaterTagElse.h"
 #import "BBTemplaterTagPreference.h"
-#import "BBTemplaterTagDialog.h"
 #import "BBTemplaterTagToast.h"
 #import "BBTemplaterTagException.h"
 #import "BBTemplaterTagXml.h"
@@ -74,7 +73,6 @@
 						  [BBTemplaterTagElse tagName]: [BBTemplaterTagElse class],
 						  [BBTemplaterTagPreference tagName]: [BBTemplaterTagPreference class],
 						  [BBTemplaterTagExecute tagName]: [BBTemplaterTagExecute class],
-						  [BBTemplaterTagDialog tagName]: [BBTemplaterTagDialog class],
 						  [BBTemplaterTagToast tagName]: [BBTemplaterTagToast class],
 						  [BBTemplaterTagException tagName]: [BBTemplaterTagException class],
 						  [BBTemplaterTagXml tagName]: [BBTemplaterTagXml class],
