@@ -35,20 +35,22 @@
 - (NSString *)valueForString:(NSString *)string inContext:(BBTemplaterContext *)context {
 	__block NSString *resultString = nil;
 	__block BOOL simpleValue = YES;
-	[_valueRegex enumerateMatchesInString:string options:0 range:NSMakeRange(0, [string length]) usingBlock:^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop) {
-		simpleValue = NO;
-		NSString *expression = [string substringWithRange:match.range];
-		NSString *valueKey = [expression substringWithRange:NSMakeRange(2, expression.length - 3)];
-		
-		NSString *value = [self valueForKey:valueKey inContext:context];
-		
-		if (value && [value isKindOfClass:[NSString class]]) {
-			if (!resultString) {
-				resultString = string;
+	if (string != nil) {
+		[_valueRegex enumerateMatchesInString:string options:0 range:NSMakeRange(0, [string length]) usingBlock:^(NSTextCheckingResult *match, NSMatchingFlags flags, BOOL *stop) {
+			simpleValue = NO;
+			NSString *expression = [string substringWithRange:match.range];
+			NSString *valueKey = [expression substringWithRange:NSMakeRange(2, expression.length - 3)];
+			
+			NSString *value = [self valueForKey:valueKey inContext:context];
+			
+			if (value && [value isKindOfClass:[NSString class]]) {
+				if (!resultString) {
+					resultString = string;
+				}
+				resultString = [resultString stringByReplacingOccurrencesOfString:expression withString:value options:0 range:NSMakeRange(0, resultString.length)];
 			}
-			resultString = [resultString stringByReplacingOccurrencesOfString:expression withString:value options:0 range:NSMakeRange(0, resultString.length)];
-		}
-	}];
+		}];
+	}
 	if (simpleValue) {
 		resultString = string;
 	}
