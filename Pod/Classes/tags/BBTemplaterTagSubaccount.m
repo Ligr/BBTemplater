@@ -31,6 +31,7 @@
 	if (name) {
 		[self.context pushAccountWithName:name];
 	}
+	callback(nil, nil);
 }
 
 - (void)didEnd {
