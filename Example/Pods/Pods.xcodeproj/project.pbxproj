@@ -7,87 +7,89 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		018B47E0F6F69EC0D1EFD1166D47DDFD /* BBTemplaterPhoneValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 075A0977FCA6E40D6FA441938C40F509 /* BBTemplaterPhoneValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		037FF6C5DCC81158B1FACAD941B373BB /* Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026D9052E347C4E590B7A597E048133A /* Sequencer.framework */; };
-		053A91F03E2B92D79E7E2687E2F1CE85 /* BBTemplaterTagSubaccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F577646EE8E0F932B56180D0F54ACF3 /* BBTemplaterTagSubaccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0858E9C62578934726DA892100F332AB /* BBTemplater.h in Headers */ = {isa = PBXBuildFile; fileRef = CD274FCF41394AA15E52D8E6516DE8CE /* BBTemplater.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0BBAEFEEA1F5BEFCF3218FACBA3C0C19 /* BBTemplaterTagVar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC804DA64BF4EEEB1F6466E7AD971AB /* BBTemplaterTagVar.m */; };
-		1568EF7AF9E3F3A7C9C0C58DC3489177 /* BBTemplaterTagVar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED078CE406986E38EB3F22706CA1F3D /* BBTemplaterTagVar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15AB4905ECE4A8AD60C56B4378FD171A /* BBTemplaterTagForeach.h in Headers */ = {isa = PBXBuildFile; fileRef = 20693D88022C1DC2A5A3BB952384E698 /* BBTemplaterTagForeach.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AF1EACB46BD2A35B7F9B4B55BEBF3B3 /* LPXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB2FCC8F58C00CB7E18841E0007174E /* LPXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BF8058A77882D1A6E43E2158C3B8E39 /* BBTemplaterTagForeach.m in Sources */ = {isa = PBXBuildFile; fileRef = CB61257BE2073FB60F4F60DB3762138E /* BBTemplaterTagForeach.m */; };
-		1C03D9D10846AC743FDF3CD6203EFE49 /* BBTemplaterTagHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F1258D83BE4E47BAEA3054D88385083F /* BBTemplaterTagHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DAF84B158CF6F14C514C291B81DB374 /* BBTemplaterGroupValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FBB90F6EDD819B282C7AF65C027B4E3 /* BBTemplaterGroupValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F1A1B9EFC547D7BC523A4F37C317CC0 /* BBTemplaterTagsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F686A4F4F41E6D2BA1982925C3C3C9 /* BBTemplaterTagsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24A5DB24FDBEAADD6E81732E6EDE232B /* BBTemplaterContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF965574726C593939CE849B241A9D2 /* BBTemplaterContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		27C868D0B76EED6CA11C11E4C479CB0D /* BBTemplaterTagXml.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F7FE4C126C99B2BDB943AD0A98CF84 /* BBTemplaterTagXml.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2A7DA6E737DD314E4CB3F39290C19C6F /* BBTemplaterTagExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEF415052052FAA4674230A9EDC3E3E /* BBTemplaterTagExecute.m */; };
+		03C606CDD5CB7055CED056A00E2F8E39 /* BBTemplaterTagException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4227C694DB492935E1A985A991488B /* BBTemplaterTagException.m */; };
+		059144213858285753F7FB0145440215 /* BBTemplaterTagForeach.m in Sources */ = {isa = PBXBuildFile; fileRef = 8608DCE49AAAA575D9015BACD2950205 /* BBTemplaterTagForeach.m */; };
+		080856A80D106733D8E387CD422F61E6 /* BBTemplaterTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 56EB81477AFE5C15D26886FB46BE0CA8 /* BBTemplaterTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B57EC91CC265F44AF433FA989384FC8 /* BBTemplaterTagHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B71A13633785D966D3EA7E799DC4213 /* BBTemplaterTagHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E0D7C68495C7FAA4CA0B6398E7F5604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
+		1175E63484BB56BDA3DDF3FBF588DAF0 /* BBTemplaterTagCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 58975EF589FB6566966F2A7CAEEA8145 /* BBTemplaterTagCallback.m */; };
+		164E6966F700A63CF5EDEBA4EB610E23 /* BBTemplaterTagVar.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B7459AD1D57583E6C32D4897A04C3C /* BBTemplaterTagVar.m */; };
+		1B798E48C42B2DF56515BA929B37C732 /* LPXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 9061DB859E14E2B47A372B96B209DEB0 /* LPXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D7CF8FE0A99EC27AEE13150F7E1C69E /* BBTemplaterErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7332E17013610E3150AC55DE5258AF /* BBTemplaterErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		252BAAC6D757DC25488204B64073FB99 /* LPXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49BD5D51AA35CA9AAD850A817EEFFA3 /* LPXML.framework */; };
+		2754B65E736D508174C496092CFEC3D6 /* BBTemplaterContext.h in Headers */ = {isa = PBXBuildFile; fileRef = B9B490C0D893497D3049C9CD4051BC2F /* BBTemplaterContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AF0B06A51C96C32F2E34AFD62C0BF24 /* BBTemplaterPhoneByValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E7BCD44196EAF31F3E636A966ED7C6 /* BBTemplaterPhoneByValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B31DEFA573AE36764C9BB29140F0304 /* LPXML.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF0F4945879E0C21D9B9CBB9A66C913E /* LPXML.bundle */; };
 		2B3F19F86340FB9851DE2251D360F793 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
-		2D439B3F8A788F41335A37061E7A1DE4 /* BBTemplaterValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7C112601295DE7AFA9A0FF83B2FD41 /* BBTemplaterValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DD8B18103193D8ED330313F30DCEE11 /* BBTemplaterTagToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 128EE6745A0FF27F6A67DAA70FFE40DC /* BBTemplaterTagToast.m */; };
-		2ECE858CE142A845E518FA3F0936B9F0 /* BBTemplaterPhoneByValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B73F40A92D78A42386125A9412B14C /* BBTemplaterPhoneByValueAnalyzer.m */; };
-		382BFD8C2F2B40AB13C567E6B1FE3C31 /* BBTemplaterTagPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4FD372CFB6D87339F625A96971EE06 /* BBTemplaterTagPreference.m */; };
-		3B42BBA8479E21974F9847D8E926D4B6 /* BBTemplaterGenericValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E66347D9077455D68CFD5EBD8B2D0F /* BBTemplaterGenericValueAnalyzer.m */; };
-		452E836762E24738B6A54C3866BA0D3D /* BBTemplaterTagsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3514095C87BD24728C270C0EAB8587 /* BBTemplaterTagsProvider.m */; };
-		490046622935CBA75E235793733FF910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
-		4A403D6863975D48C96D30F79BEEC12B /* BBTemplaterTagSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 94EFBD9890EB4F137DE7BB97B7C09BFC /* BBTemplaterTagSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A570A6AAF706CBE0583025D2C49F0E4 /* BBTemplaterTagsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 577C787F4C3969F05D73C6CC7A5D8A13 /* BBTemplaterTagsProcessor.m */; };
-		56D52A09AC7142849B1836AA3C8F263C /* LPXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BB21D38B6E2818597999F1486E3D12 /* LPXML-dummy.m */; };
-		5879106037CE61E9237E07467DAA1A62 /* BBTemplater.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A19A994AF7757393CDF00921F49B88 /* BBTemplater.m */; };
-		5DBE45527AAFF21E61CAA34FFEE11BB1 /* BBTemplaterTagCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 136BB1B3D9CE4F4AFE4C0D66A7210459 /* BBTemplaterTagCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BE5A6F9481BAE3E454056FF1EB485F7 /* BBTemplaterTagOut.m in Sources */ = {isa = PBXBuildFile; fileRef = D0723434756B70A1A434188B94E5D39D /* BBTemplaterTagOut.m */; };
+		35965421FAA0BC97B78652C12EC2FB53 /* BBTemplater.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85498FE306AF617D1042C59BD7425113 /* BBTemplater.bundle */; };
+		3660D52DA668C92E6343A42650A36CE3 /* BBTemplaterValueProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 38C1E790D574081AA3122570F4CC92E8 /* BBTemplaterValueProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B06EB6F90CC82FB90470D7172C5EE35 /* BBTemplaterTagVar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7285B12D96C4DAB357517EAFED2555E1 /* BBTemplaterTagVar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E13C11429FBE4E4C36E14EB81C54EB0 /* BBTemplaterErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = BB426F48F75205056C1508CE97C53459 /* BBTemplaterErrors.m */; };
+		467A85D3A4E5AE319558841D53B816A8 /* BBTemplaterTagsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CF6B83F9CA59DF8664A9B554D855BA /* BBTemplaterTagsProvider.m */; };
+		4AE77ABE1A88582A2D74D4326E056EA3 /* BBTemplaterTagForeach.h in Headers */ = {isa = PBXBuildFile; fileRef = D8EF5F8093EBDF9768A2413E6C34599A /* BBTemplaterTagForeach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B80C4C743F991C666B00DE71E1E0615 /* BBTemplaterGenericValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 25B21CA78E3E1A56CCFA6310B548A523 /* BBTemplaterGenericValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E9AAF0FC413B60F238F40CBD2E679B8 /* BBTemplaterTagToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A80CD2ED949FE1CC730B4D219118545 /* BBTemplaterTagToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50DBB55FF51E4091DAB51B5B00349E3F /* Sequencer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB81125EB77EFB1819812C1A1ED975 /* Sequencer-dummy.m */; };
+		56E49F8E281325592F17675A221350E7 /* LPXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE31CA2F4D10307D872994903FA2024 /* LPXML.m */; };
+		5928BDE8710E40D5A185F57D3D2BFF0C /* BBTemplaterStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E646DF2C0FB6F5107D2173073630725 /* BBTemplaterStringUtils.m */; };
+		5EDEAC0EB9F299DE97A7533F1161BF42 /* BBTemplaterResultValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 61400585E8C93CEA2B40C0A52EED00BF /* BBTemplaterResultValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		627DB1D2773787B4E65A6AC347A4F2E3 /* BBTemplaterTagElse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7969D99A77B8CA25CC499A31D82FDCEB /* BBTemplaterTagElse.m */; };
+		636CFCC1FEE09AA48A5F5D5219CEA568 /* BBTemplaterTagsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9FB3809F302DF60F895FF2F57062E1 /* BBTemplaterTagsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65765169A02AB2454DD7082F2004232B /* BBTemplaterFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5859286C62DD6EC4AD9145E4808D46 /* BBTemplaterFunctions.m */; };
+		68D5C1CDC197F38D6FA1A4C0DF5BB974 /* BBTemplaterTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 402C7BD726725A845B1AC5B8EFE72E7E /* BBTemplaterTag.m */; };
 		69496A6FB43451831FC5C15CCF548A1C /* Pods-BBTemplater_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F114BBE2E7DBCDD3C62AC9DA657EB96B /* Pods-BBTemplater_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7927CB2DD6A7303E507227C6627220E4 /* BBTemplaterTagPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC37FB70C43C17C411EBDA72F3B7BF5 /* BBTemplaterTagPreference.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7959B4397F9021D2E34922E3D98FC502 /* BBTemplaterTagXpath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1AD0D4842E41580A8660D91B8C1D22 /* BBTemplaterTagXpath.m */; };
-		7E7800E3C6694E549CAE4F81D072410C /* BBTemplaterResultValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 039138F0A90A1C0E63874A341A401676 /* BBTemplaterResultValueAnalyzer.m */; };
-		7FAD74831BE2BC602A54DB8C801E5A12 /* LPXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE31CA2F4D10307D872994903FA2024 /* LPXML.m */; };
-		84DD56EA090178C9B3587BBFA6A0106C /* BBTemplaterTag.m in Sources */ = {isa = PBXBuildFile; fileRef = A81153A3C86D5EEDDAD62FD7168A9109 /* BBTemplaterTag.m */; };
-		89C95C4851E2F565C8835DDB6F40B730 /* BBTemplaterStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A46794EF542AE658AA713F60E7C1C71 /* BBTemplaterStringUtils.m */; };
-		8C2CBD6141B76840479F1965D9EC0FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
-		8E299846561C4DD1F534D29DF8692A7D /* BBTemplaterPhoneByValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0321E0A536B7DA8C8ED9893A42484058 /* BBTemplaterPhoneByValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90C84A362614FDFC4FB2C7B4BB762DB7 /* BBTemplaterTagElse.h in Headers */ = {isa = PBXBuildFile; fileRef = 750D2314F76FB1936267CDBD1AA0AE0C /* BBTemplaterTagElse.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94AB00683F0DB82EA76FB9A234581453 /* BBTemplaterTagSubaccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C00A9EBCACB7F5F5E7E6355C71519DF /* BBTemplaterTagSubaccount.m */; };
-		959C75C77508194407C9FFA98A078DFA /* Sequencer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FB947441411E4BD17C65F1029783EE /* Sequencer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		97AD764DED8691A2CEE387E0FE2764BF /* BBTemplaterTagToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F104BE0AC9B98B21CA9378A8DFE4BA /* BBTemplaterTagToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9AD43C2855F0EC3D42EEEDAA36243E3C /* BBTemplaterTagOut.m in Sources */ = {isa = PBXBuildFile; fileRef = D65BA44CEA5FD3932B4CA632D3BA8375 /* BBTemplaterTagOut.m */; };
-		9B81956A354DBAF0BF4359BD8F41E0A5 /* BBTemplaterTagsProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F1246346544132DF1468617AB370359 /* BBTemplaterTagsProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DFB4CC2E46F520FE32521E914BA2ECC /* BBTemplaterTagException.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC3F02B268EB687D1CCEEA9FEB845DF /* BBTemplaterTagException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E25D58AA1A1296CDA0A45DE7683265C /* BBTemplaterTag.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4E092FB4C51AF4614E7E06816699D7 /* BBTemplaterTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F93D8AFAA38E3E447210106B3AE9F84 /* BBTemplaterTagParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 125EA8584287B535BAD0C044BADDC41B /* BBTemplaterTagParam.m */; };
-		A04363A4A45A3F29E0767675FF7CDD61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
-		A4E391B73F7419D9BD0825E966F42F00 /* BBTemplaterErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AA069F2965F33B37B904A0009DB9D3 /* BBTemplaterErrors.m */; };
-		A5C9CBE1EC95CBAE1E2AB71B432286F8 /* BBTemplaterTagSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CE321BA756B7F00B1FA1767689F81103 /* BBTemplaterTagSearch.m */; };
-		A69F072D8D18F08AF72DF329EFB21AA1 /* BBTemplaterPhoneValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2CF538D06CDDBFD3E17D03B6EF2996 /* BBTemplaterPhoneValueAnalyzer.m */; };
-		A8311A1B35373CD408142B1C0305DBBD /* BBTemplater.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85498FE306AF617D1042C59BD7425113 /* BBTemplater.bundle */; };
-		A9D49CC8365082A04463092E4236878D /* LPXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49BD5D51AA35CA9AAD850A817EEFFA3 /* LPXML.framework */; };
-		AD3368675A3AA54DBB24DECED0AC52C0 /* BBTemplaterResultValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A1648947198CA3A9DDC547433A360B /* BBTemplaterResultValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADD1C1FF81E075ACB42A61FE53943DAE /* LPXML.h in Headers */ = {isa = PBXBuildFile; fileRef = 9061DB859E14E2B47A372B96B209DEB0 /* LPXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEFC05595359EADB4D08B32ED62378B4 /* BBTemplaterTagExecute.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B09CA0F82B8D0615D3739D584D023BF /* BBTemplaterTagExecute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B05B5EB7A51D2A1D9287A11A273461B6 /* BBTemplater-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 350DD38ED349E3FDED406A60EBCC9F85 /* BBTemplater-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B61865EE1E842EBADCD8DAC27FDD6C51 /* BBTemplater-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 583496A6F023A33D29911603820A8A80 /* BBTemplater-dummy.m */; };
-		B7610E90FF77432C4CE5D6E3ADF3D6CE /* BBTemplaterTagParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2E4AB8E8AE0F56992489D2CD890520 /* BBTemplaterTagParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA933F995E1BE1FE6D8F0A495AE4D6BE /* BBTemplaterErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE214E24C1EA5BE11B3D191D60F38B1 /* BBTemplaterErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C032CE84E79B658FD57C0B4CFF51F3FF /* BBTemplaterTagCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = A04A2350D5678DC2E8F23D352AE876A9 /* BBTemplaterTagCallback.m */; };
-		C24A13ECC3FE40C80AEB00E2885B7148 /* BBTemplaterTagElse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4600F8DAE2BD123EA562D836013CAF01 /* BBTemplaterTagElse.m */; };
-		C337169C767B2860F2B9F886D181B316 /* BBTemplaterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7484D0217496681A776F6B9CE257C /* BBTemplaterContext.m */; };
-		C36D73B3F13099F15727FEDF988BF717 /* BBTemplaterTagHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEC475745DA677BCD9C4F5DADE62FC6 /* BBTemplaterTagHeader.m */; };
-		C3E7B1AD1B2BBFE1E98AFBAAD3188AF4 /* BBTemplaterTagXml.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B85503F332AADDD09581B44EEB6A6E /* BBTemplaterTagXml.m */; };
-		C5000560605BE77DB6C7438609276A65 /* LPXML.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF0F4945879E0C21D9B9CBB9A66C913E /* LPXML.bundle */; };
-		C7E1A7A7898B54B36787BD22EAA8F424 /* BBTemplaterTagOut.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EF9B03CEE0E871C0615FAB23286889 /* BBTemplaterTagOut.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBD2DFB54A72F76513B88A7EE4BF4883 /* BBTemplaterTagProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 24837F93D5F76CF373B00B4FD2AE9BC1 /* BBTemplaterTagProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC1D359A29C992DC07A82E3E6F8DF48E /* BBTemplaterGroupValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D8BCF1178A52FFF4CA632463786DEF /* BBTemplaterGroupValueAnalyzer.m */; };
-		CE0D20D957D906C43761A83B85EA8547 /* BBTemplaterValueProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 51498051D440EBE87D57ACF6AAF7DA1B /* BBTemplaterValueProcessor.m */; };
+		6C734BD414CB15D330A2764D8D2F8B28 /* LPXML-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BB21D38B6E2818597999F1486E3D12 /* LPXML-dummy.m */; };
+		6DF791B0D3D0951581D8CCB0F67E516D /* BBTemplaterTagSubaccount.h in Headers */ = {isa = PBXBuildFile; fileRef = B82A672C8D549BE659DD652B93ED0887 /* BBTemplaterTagSubaccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F3B37E368A70D267EA73A112313BB3F /* BBTemplaterTagParam.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CB957939FA1228AA44561E09DB8634 /* BBTemplaterTagParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7256A0538157AC8289B1AE7E450AA70C /* LPXML-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB2FCC8F58C00CB7E18841E0007174E /* LPXML-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76367AAEA8058D2E438BE3E86979C961 /* BBTemplaterPhoneValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CFAFC79197D038B3692FAE251E07AE /* BBTemplaterPhoneValueAnalyzer.m */; };
+		7D40B3C32798EA9817D1FC4F08EE237C /* BBTemplaterTagExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = C306F2CBB048AE527B26BF84EAC8A35D /* BBTemplaterTagExecute.m */; };
+		7F10E7A679B2143DC85663232CA6B6B6 /* BBTemplaterTagExecute.h in Headers */ = {isa = PBXBuildFile; fileRef = FEC760292BA95F584DA9164770685BA3 /* BBTemplaterTagExecute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FA3D04D6D13DC6DD4739F7C8D864AA7 /* BBTemplaterTagXml.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A26C9E421B789099769C06E8D9F0648 /* BBTemplaterTagXml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81DE18902533FB239E1DB903F6A55E13 /* BBTemplaterTagHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9359A00D7EA11B6A25FC4C2E3FA0318F /* BBTemplaterTagHeader.m */; };
+		822DD17E8063CC27362385C2ADDCD602 /* Sequencer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0FB947441411E4BD17C65F1029783EE /* Sequencer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8722BB6C941E3F7DB7E8D68AAAB4A635 /* BBTemplaterTagException.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F7F1E9D0CCD1AA014DA0C4992E66EF /* BBTemplaterTagException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87AA88607DF85DD28A1C85F8CDF367C0 /* BBTemplaterTagsProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B353FAEA4DCCFD0EC4180CDA511B66 /* BBTemplaterTagsProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA897858A83F1E71C8744F5A5B645B0 /* BBTemplaterTagSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = DFAE6E2CAC29C12D1A4246A49B224DDE /* BBTemplaterTagSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F8567BEABF529C60A358606FD8CDE6B /* BBTemplaterTagPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 03377AD440B1E156E3B523201106CF8C /* BBTemplaterTagPreference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9916F04D54B06F16AA68B0640AB58925 /* BBTemplaterTagsProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18107DDA7FA1FF59DC469829EB35C36E /* BBTemplaterTagsProcessor.m */; };
+		99D1B88E6ADD99FE5846D36497624E95 /* BBTemplaterPhoneValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 155F01503A61E9F83F1D7C99A08929A2 /* BBTemplaterPhoneValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CD1CDE8C353CFF2CB6A586E9A8994B6 /* BBTemplater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38CC18E9F30B757CFD5E1F4B7B191C /* BBTemplater.m */; };
+		A0AA73765AEB8BB153176F6FF4E7BE33 /* BBTemplaterTagSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = E0562B9712E375FE8166E2555438F349 /* BBTemplaterTagSearch.m */; };
+		A0C9721994F593C9038326991AA905F0 /* BBTemplaterTagProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 007533E3318E8AC161C9CFFD737F8971 /* BBTemplaterTagProvider.m */; };
+		A2D6DFA7A96FB1BFD793DB95E011F641 /* BBTemplaterGroupValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 96146A108C70B3E490C2039362185F9E /* BBTemplaterGroupValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5359A06E12F783DACC76D9B9DA6344D /* BBTemplater-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 350DD38ED349E3FDED406A60EBCC9F85 /* BBTemplater-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AAC1491CC213CE0AF13477E8EF4958A4 /* BBTemplaterTagOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 66EC510ABF65BA0A7B6EE32AE3F17FCE /* BBTemplaterTagOut.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD2A40A3A8ED5B45CAECA3652C5AB34E /* BBTemplaterGroupValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50860A789CC617FFE7BB2882BD93ED3B /* BBTemplaterGroupValueAnalyzer.m */; };
+		AF092AF1C0E35EC2A8742CC541FAB334 /* BBTemplaterTagProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA992063C9E3F4FFC82EF6995404A36 /* BBTemplaterTagProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B44D9F0F5377E3E57E0A5B07246C50F5 /* BBTemplaterPhoneByValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC74477F0E6E7A4FEA2635C48ACA414 /* BBTemplaterPhoneByValueAnalyzer.m */; };
+		B78DE7591B17B6A1F39DBE6F973D9A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
+		BAC2347E82058B1A3F8FA54636A94343 /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FBD4F5724297E4B28EFB06B42CC11A /* Sequencer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BFE501672EBC36E4AB7B86D3672985D6 /* BBTemplaterTagXml.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E0A373DEB3A8CF684AA3D30CC841A5 /* BBTemplaterTagXml.m */; };
+		C04DF2936E2A321EC43169842984390B /* BBTemplaterTagElse.h in Headers */ = {isa = PBXBuildFile; fileRef = 99012140BB2BC0E9B2439B86AAA55AE2 /* BBTemplaterTagElse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C05D3EC716E52EB5E81924994B82E402 /* BBTemplaterTagXpath.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B2DEFF9B3C76BEF2B17E2D50156D7DF /* BBTemplaterTagXpath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C175C94BDD2BC093919AA9E70DF3E244 /* BBTemplaterStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 55CA3051B67BBE5B05732E59BD6F3857 /* BBTemplaterStringUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6E54D115AD6083A428ED143ECD1137F /* Sequencer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026D9052E347C4E590B7A597E048133A /* Sequencer.framework */; };
+		C856BE169BAC571DF5096B2EF4B34DCF /* BBTemplaterFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = D48530A74515EBD439FEF8E11FA29313 /* BBTemplaterFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC0DDE5E25365E5BC57F24BAC540E4F3 /* BBTemplater.h in Headers */ = {isa = PBXBuildFile; fileRef = B665FFAAEAA58EDF562629DCF6E09DCC /* BBTemplater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE32A6A2384F23795E8A3CDB88D3D47B /* BBTemplaterContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1DCBF1B5F3DF9376AC5A8A9090058 /* BBTemplaterContext.m */; };
+		CE5059AD292B6D4AA9B3D933C62DBB2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */; };
 		CF2FD65AF7BA7ADDA4C94E6DEE04069F /* Pods-BBTemplater_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB25060A71AFBA6E63DF6E09BD54E72 /* Pods-BBTemplater_Tests-dummy.m */; };
-		D3D7C8C79E6B3327D6DA2610A8C53469 /* BBTemplaterGenericValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7547643AF8568427F4C97F922B4C444A /* BBTemplaterGenericValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7ADC8C8603D23F3A3D67C5660DA3AAF /* BBTemplaterTagProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F3E4D9BECEAF495E4BBE32601B2350 /* BBTemplaterTagProvider.m */; };
-		D8E8EF5261AAD45BE6C6A40C25542535 /* Sequencer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BB81125EB77EFB1819812C1A1ED975 /* Sequencer-dummy.m */; };
-		DA5DA40F4871995D4323AA13B4B5D452 /* BBTemplaterFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A29E63EEA358410D4C57C2E8CF601CB /* BBTemplaterFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E05A9B10E5DE86E103B4B130F0994A61 /* BBTemplaterStringUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CFC4854B8C244F551E5445546125019C /* BBTemplaterStringUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E93A2291E06C4F7C371601E9B9286CBB /* BBTemplaterTagException.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FE04B88C3541B300FBC80BC810E9B2 /* BBTemplaterTagException.m */; };
-		E96B180F9105EB8A33E653CF17C86BCE /* BBTemplaterFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BA954CACE33A2B7611E64B70179B0C /* BBTemplaterFunctions.m */; };
-		F04F2EC55792084F925C90D9D784FBFC /* Sequencer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F9AFC6DBE734C70C0265CF8ADF1B9E /* Sequencer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0A7470E17AF3437891E0DF992DE9A97 /* BBTemplaterTagXpath.h in Headers */ = {isa = PBXBuildFile; fileRef = A9BC189D0753A107721A609F437F41A8 /* BBTemplaterTagXpath.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9DDAC7D79440500887C4C98418CFB7A /* BBTemplaterValueProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 908BC6ED12623944AA329B4CDEA4098A /* BBTemplaterValueProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFA560BD755F395DB25F09A3E3776B4E /* Sequencer.m in Sources */ = {isa = PBXBuildFile; fileRef = 70FBD4F5724297E4B28EFB06B42CC11A /* Sequencer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DDCFA0C076397D357828C1DC574EFCD7 /* BBTemplaterTagPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BD6DBCCCE7A13168A5D446CD35CD22 /* BBTemplaterTagPreference.m */; };
+		E3CE55F52EFEC4451777E93CCF88069A /* Sequencer.h in Headers */ = {isa = PBXBuildFile; fileRef = E4F9AFC6DBE734C70C0265CF8ADF1B9E /* Sequencer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6385A943D8ABA75CC22507A23D6F287 /* BBTemplaterTagXpath.m in Sources */ = {isa = PBXBuildFile; fileRef = 61603947888B4FF61E3E865FC36769EF /* BBTemplaterTagXpath.m */; };
+		E8243C8049C37D162F0EDFAF705B6E4A /* BBTemplaterTagSubaccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BC075DE2B1675E5ED344FEEDA9DBB360 /* BBTemplaterTagSubaccount.m */; };
+		EA28B7B33A58D4CEE976C7D59CA9A42E /* BBTemplater-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 583496A6F023A33D29911603820A8A80 /* BBTemplater-dummy.m */; };
+		EEB9576D3A8C56C3B055DCBFCF8EA452 /* BBTemplaterTagCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 533150D92B71626C3B8A1186D444FA0F /* BBTemplaterTagCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F12C08DF469496CA3662F8BD8EE91153 /* BBTemplaterGenericValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = FB33A22AA2481DB933D56E855854E41B /* BBTemplaterGenericValueAnalyzer.m */; };
+		F30D3D4B4D1EBC7632C0979528C4DF1C /* BBTemplaterTagToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7EDDABB455C96D63A01B2E14925E2A /* BBTemplaterTagToast.m */; };
+		F57D38E9C56DC05C67D350E2F919D0BA /* BBTemplaterValueProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 23214A7531F6A74828D35E1671B4C223 /* BBTemplaterValueProcessor.m */; };
+		F824FF68C428F3B487FBE4EACAF6913A /* BBTemplaterTagParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB7D581A110D0B2836D8FFF31882B21 /* BBTemplaterTagParam.m */; };
+		FA3433D5CD87ED8C5EAFE7CC98499294 /* BBTemplaterResultValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C03B49DBD3E4435F50157BA14801D4 /* BBTemplaterResultValueAnalyzer.m */; };
+		FAB5CEAE1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB5CEAC1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.h */; };
+		FAB5CEAF1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB5CEAD1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.m */; };
+		FC7BB898A983A8AA3AE72183A1360364 /* BBTemplaterValueAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED2072EA4D3B4CDA0764120E6A79DC9 /* BBTemplaterValueAnalyzer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,180 +97,181 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = ED7BC433EA76827636795FC236105472;
+			remoteGlobalIDString = 855B5CE24BE5A112084AE920B4501CDB;
+			remoteInfo = LPXML;
+		};
+		3FFE5C3EC6EBA2D09010B431D6DAE4F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855B5CE24BE5A112084AE920B4501CDB;
 			remoteInfo = LPXML;
 		};
 		48A9CAB705D731B1C497B3DD69FCCE53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5186B516C350A83F4133098E65F7513C;
+			remoteGlobalIDString = A0652A044FFDC871865B8BEE893D1C5C;
 			remoteInfo = Sequencer;
 		};
-		4B599434048F25BD478A964E6F6F0D7E /* PBXContainerItemProxy */ = {
+		91420CFF59AD82A2F93ED9B59CB31598 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5186B516C350A83F4133098E65F7513C;
-			remoteInfo = Sequencer;
-		};
-		61EFAC68705CBC98D6EED1F1B1359E75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ED7BC433EA76827636795FC236105472;
-			remoteInfo = LPXML;
+			remoteGlobalIDString = FA8DFB2ACD02286C3C8D932C4CF93936;
+			remoteInfo = "BBTemplater-BBTemplater";
 		};
 		94FCD35C7797258B8066787247EF44FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F6E074EF22E1D9B744A1C4472C360B9;
+			remoteGlobalIDString = C7A0B2731D6100016C0D8A2226741564;
 			remoteInfo = BBTemplater;
 		};
-		D638B3001B4A385DCE1776F2E0108518 /* PBXContainerItemProxy */ = {
+		97073B24C6BE83FB8CE5D852BBC6ED0E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2640853FF20AADDB8CC71FDB0D4C3E52;
-			remoteInfo = "BBTemplater-BBTemplater";
+			remoteGlobalIDString = A0652A044FFDC871865B8BEE893D1C5C;
+			remoteInfo = Sequencer;
 		};
-		EC6BE7B2E405B867FC00AEB3632A0716 /* PBXContainerItemProxy */ = {
+		FD30245891FC1E28D37482288FBF11CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C0FCFA0AD44219752BC702B88DBB87B8;
+			remoteGlobalIDString = 030A0284F54A6ED435DFF28CBF274724;
 			remoteInfo = "LPXML-LPXML";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007533E3318E8AC161C9CFFD737F8971 /* BBTemplaterTagProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagProvider.m; sourceTree = "<group>"; };
 		026D9052E347C4E590B7A597E048133A /* Sequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02BA954CACE33A2B7611E64B70179B0C /* BBTemplaterFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterFunctions.m; sourceTree = "<group>"; };
-		0321E0A536B7DA8C8ED9893A42484058 /* BBTemplaterPhoneByValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterPhoneByValueAnalyzer.h; sourceTree = "<group>"; };
-		039138F0A90A1C0E63874A341A401676 /* BBTemplaterResultValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterResultValueAnalyzer.m; sourceTree = "<group>"; };
-		03F104BE0AC9B98B21CA9378A8DFE4BA /* BBTemplaterTagToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagToast.h; sourceTree = "<group>"; };
-		075A0977FCA6E40D6FA441938C40F509 /* BBTemplaterPhoneValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterPhoneValueAnalyzer.h; sourceTree = "<group>"; };
-		07D8BCF1178A52FFF4CA632463786DEF /* BBTemplaterGroupValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterGroupValueAnalyzer.m; sourceTree = "<group>"; };
-		07F3E4D9BECEAF495E4BBE32601B2350 /* BBTemplaterTagProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagProvider.m; sourceTree = "<group>"; };
+		03377AD440B1E156E3B523201106CF8C /* BBTemplaterTagPreference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagPreference.h; sourceTree = "<group>"; };
 		086BB28AC777948C4951440C1A38B021 /* BBTemplater.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BBTemplater.xcconfig; sourceTree = "<group>"; };
-		0A46794EF542AE658AA713F60E7C1C71 /* BBTemplaterStringUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterStringUtils.m; sourceTree = "<group>"; };
-		0AC37FB70C43C17C411EBDA72F3B7BF5 /* BBTemplaterTagPreference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagPreference.h; sourceTree = "<group>"; };
+		0A4227C694DB492935E1A985A991488B /* BBTemplaterTagException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagException.m; sourceTree = "<group>"; };
 		0AF6E082827E2BF915044579F248144D /* Pods-BBTemplater_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BBTemplater_Tests-resources.sh"; sourceTree = "<group>"; };
 		0CCA17AA4C88E3ECA2C0F7E37B1BE37C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D32B9D07D1C7316C3B5F46E37ED189A /* Sequencer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sequencer.xcconfig; sourceTree = "<group>"; };
-		0FBB90F6EDD819B282C7AF65C027B4E3 /* BBTemplaterGroupValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterGroupValueAnalyzer.h; sourceTree = "<group>"; };
-		125EA8584287B535BAD0C044BADDC41B /* BBTemplaterTagParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagParam.m; sourceTree = "<group>"; };
-		128EE6745A0FF27F6A67DAA70FFE40DC /* BBTemplaterTagToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagToast.m; sourceTree = "<group>"; };
-		136BB1B3D9CE4F4AFE4C0D66A7210459 /* BBTemplaterTagCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagCallback.h; sourceTree = "<group>"; };
-		16F686A4F4F41E6D2BA1982925C3C3C9 /* BBTemplaterTagsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagsProvider.h; sourceTree = "<group>"; };
-		1C2E4AB8E8AE0F56992489D2CD890520 /* BBTemplaterTagParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagParam.h; sourceTree = "<group>"; };
-		1D2CF538D06CDDBFD3E17D03B6EF2996 /* BBTemplaterPhoneValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterPhoneValueAnalyzer.m; sourceTree = "<group>"; };
-		20693D88022C1DC2A5A3BB952384E698 /* BBTemplaterTagForeach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagForeach.h; sourceTree = "<group>"; };
-		23B73F40A92D78A42386125A9412B14C /* BBTemplaterPhoneByValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterPhoneByValueAnalyzer.m; sourceTree = "<group>"; };
-		24837F93D5F76CF373B00B4FD2AE9BC1 /* BBTemplaterTagProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagProvider.h; sourceTree = "<group>"; };
-		24E66347D9077455D68CFD5EBD8B2D0F /* BBTemplaterGenericValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterGenericValueAnalyzer.m; sourceTree = "<group>"; };
-		25B85503F332AADDD09581B44EEB6A6E /* BBTemplaterTagXml.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagXml.m; sourceTree = "<group>"; };
-		2C3514095C87BD24728C270C0EAB8587 /* BBTemplaterTagsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagsProvider.m; sourceTree = "<group>"; };
+		155F01503A61E9F83F1D7C99A08929A2 /* BBTemplaterPhoneValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterPhoneValueAnalyzer.h; sourceTree = "<group>"; };
+		18107DDA7FA1FF59DC469829EB35C36E /* BBTemplaterTagsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagsProcessor.m; sourceTree = "<group>"; };
+		23214A7531F6A74828D35E1671B4C223 /* BBTemplaterValueProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterValueProcessor.m; sourceTree = "<group>"; };
+		25B21CA78E3E1A56CCFA6310B548A523 /* BBTemplaterGenericValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterGenericValueAnalyzer.h; sourceTree = "<group>"; };
+		2A26C9E421B789099769C06E8D9F0648 /* BBTemplaterTagXml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagXml.h; sourceTree = "<group>"; };
 		2DB25060A71AFBA6E63DF6E09BD54E72 /* Pods-BBTemplater_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BBTemplater_Tests-dummy.m"; sourceTree = "<group>"; };
+		2E5859286C62DD6EC4AD9145E4808D46 /* BBTemplaterFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterFunctions.m; sourceTree = "<group>"; };
 		350DD38ED349E3FDED406A60EBCC9F85 /* BBTemplater-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBTemplater-umbrella.h"; sourceTree = "<group>"; };
+		37F1DCBF1B5F3DF9376AC5A8A9090058 /* BBTemplaterContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterContext.m; sourceTree = "<group>"; };
+		38C1E790D574081AA3122570F4CC92E8 /* BBTemplaterValueProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterValueProcessor.h; sourceTree = "<group>"; };
 		39A00AD8227A30E96A4437AC218B7C43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A8BD38EA6DEC1733F80435A030589B4 /* LPXML-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPXML-prefix.pch"; sourceTree = "<group>"; };
-		3FC804DA64BF4EEEB1F6466E7AD971AB /* BBTemplaterTagVar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagVar.m; sourceTree = "<group>"; };
-		4600F8DAE2BD123EA562D836013CAF01 /* BBTemplaterTagElse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagElse.m; sourceTree = "<group>"; };
-		4B4FD372CFB6D87339F625A96971EE06 /* BBTemplaterTagPreference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagPreference.m; sourceTree = "<group>"; };
-		4C1AD0D4842E41580A8660D91B8C1D22 /* BBTemplaterTagXpath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagXpath.m; sourceTree = "<group>"; };
-		4DE214E24C1EA5BE11B3D191D60F38B1 /* BBTemplaterErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterErrors.h; sourceTree = "<group>"; };
-		4ED078CE406986E38EB3F22706CA1F3D /* BBTemplaterTagVar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagVar.h; sourceTree = "<group>"; };
+		3C7EDDABB455C96D63A01B2E14925E2A /* BBTemplaterTagToast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagToast.m; sourceTree = "<group>"; };
+		402C7BD726725A845B1AC5B8EFE72E7E /* BBTemplaterTag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTag.m; sourceTree = "<group>"; };
+		4ED2072EA4D3B4CDA0764120E6A79DC9 /* BBTemplaterValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterValueAnalyzer.h; sourceTree = "<group>"; };
 		50424931F2D3FCAA47C1E1990E9A2732 /* Sequencer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sequencer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51498051D440EBE87D57ACF6AAF7DA1B /* BBTemplaterValueProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterValueProcessor.m; sourceTree = "<group>"; };
+		50860A789CC617FFE7BB2882BD93ED3B /* BBTemplaterGroupValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterGroupValueAnalyzer.m; sourceTree = "<group>"; };
+		533150D92B71626C3B8A1186D444FA0F /* BBTemplaterTagCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagCallback.h; sourceTree = "<group>"; };
 		556571B61E23FE118E469515AFC194A6 /* Pods-BBTemplater_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBTemplater_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		577C787F4C3969F05D73C6CC7A5D8A13 /* BBTemplaterTagsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagsProcessor.m; sourceTree = "<group>"; };
+		55CA3051B67BBE5B05732E59BD6F3857 /* BBTemplaterStringUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterStringUtils.h; sourceTree = "<group>"; };
+		56EB81477AFE5C15D26886FB46BE0CA8 /* BBTemplaterTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTag.h; sourceTree = "<group>"; };
 		583496A6F023A33D29911603820A8A80 /* BBTemplater-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BBTemplater-dummy.m"; sourceTree = "<group>"; };
-		58AA069F2965F33B37B904A0009DB9D3 /* BBTemplaterErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterErrors.m; sourceTree = "<group>"; };
-		5BEC475745DA677BCD9C4F5DADE62FC6 /* BBTemplaterTagHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagHeader.m; sourceTree = "<group>"; };
+		58975EF589FB6566966F2A7CAEEA8145 /* BBTemplaterTagCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagCallback.m; sourceTree = "<group>"; };
 		5CB2FCC8F58C00CB7E18841E0007174E /* LPXML-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPXML-umbrella.h"; sourceTree = "<group>"; };
-		5D7C112601295DE7AFA9A0FF83B2FD41 /* BBTemplaterValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterValueAnalyzer.h; sourceTree = "<group>"; };
+		61400585E8C93CEA2B40C0A52EED00BF /* BBTemplaterResultValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterResultValueAnalyzer.h; sourceTree = "<group>"; };
+		61603947888B4FF61E3E865FC36769EF /* BBTemplaterTagXpath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagXpath.m; sourceTree = "<group>"; };
+		64E7BCD44196EAF31F3E636A966ED7C6 /* BBTemplaterPhoneByValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterPhoneByValueAnalyzer.h; sourceTree = "<group>"; };
+		66EC510ABF65BA0A7B6EE32AE3F17FCE /* BBTemplaterTagOut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagOut.h; sourceTree = "<group>"; };
 		67812FFB7E40AD131756BE433886B758 /* Pods-BBTemplater_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BBTemplater_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		67E4E720D901EFCC4793B3ED8BF97705 /* BBTemplater-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BBTemplater-prefix.pch"; sourceTree = "<group>"; };
+		6A80CD2ED949FE1CC730B4D219118545 /* BBTemplaterTagToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagToast.h; sourceTree = "<group>"; };
 		6EE31CA2F4D10307D872994903FA2024 /* LPXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LPXML.m; path = Pod/Classes/LPXML.m; sourceTree = "<group>"; };
 		6FE813F04ABFB24D4CF9823DBA8B431B /* Sequencer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sequencer-prefix.pch"; sourceTree = "<group>"; };
-		6FF965574726C593939CE849B241A9D2 /* BBTemplaterContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterContext.h; sourceTree = "<group>"; };
 		70FBD4F5724297E4B28EFB06B42CC11A /* Sequencer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Sequencer.m; path = Sequencer/Sequencer.m; sourceTree = "<group>"; };
-		750D2314F76FB1936267CDBD1AA0AE0C /* BBTemplaterTagElse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagElse.h; sourceTree = "<group>"; };
-		7547643AF8568427F4C97F922B4C444A /* BBTemplaterGenericValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterGenericValueAnalyzer.h; sourceTree = "<group>"; };
+		7285B12D96C4DAB357517EAFED2555E1 /* BBTemplaterTagVar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagVar.h; sourceTree = "<group>"; };
 		78A1B56A00DAB31BDDD0D05284FA5D75 /* Pods-BBTemplater_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BBTemplater_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		78EACA027D480E1EC1A6F389FBC12388 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7969D99A77B8CA25CC499A31D82FDCEB /* BBTemplaterTagElse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagElse.m; sourceTree = "<group>"; };
+		7B2DEFF9B3C76BEF2B17E2D50156D7DF /* BBTemplaterTagXpath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagXpath.h; sourceTree = "<group>"; };
 		85498FE306AF617D1042C59BD7425113 /* BBTemplater.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBTemplater.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		85684E3AD47F200CED3228840E792CAF /* Pods-BBTemplater_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BBTemplater_Tests.modulemap"; sourceTree = "<group>"; };
-		8A29E63EEA358410D4C57C2E8CF601CB /* BBTemplaterFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterFunctions.h; sourceTree = "<group>"; };
-		8BF7484D0217496681A776F6B9CE257C /* BBTemplaterContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterContext.m; sourceTree = "<group>"; };
-		8C00A9EBCACB7F5F5E7E6355C71519DF /* BBTemplaterTagSubaccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagSubaccount.m; sourceTree = "<group>"; };
-		8F1246346544132DF1468617AB370359 /* BBTemplaterTagsProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagsProcessor.h; sourceTree = "<group>"; };
-		8F577646EE8E0F932B56180D0F54ACF3 /* BBTemplaterTagSubaccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagSubaccount.h; sourceTree = "<group>"; };
+		8608DCE49AAAA575D9015BACD2950205 /* BBTemplaterTagForeach.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagForeach.m; sourceTree = "<group>"; };
+		89CF6B83F9CA59DF8664A9B554D855BA /* BBTemplaterTagsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagsProvider.m; sourceTree = "<group>"; };
+		8B38CC18E9F30B757CFD5E1F4B7B191C /* BBTemplater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplater.m; sourceTree = "<group>"; };
+		8B9FB3809F302DF60F895FF2F57062E1 /* BBTemplaterTagsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagsProvider.h; sourceTree = "<group>"; };
+		8E646DF2C0FB6F5107D2173073630725 /* BBTemplaterStringUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterStringUtils.m; sourceTree = "<group>"; };
 		9061DB859E14E2B47A372B96B209DEB0 /* LPXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPXML.h; path = Pod/Classes/LPXML.h; sourceTree = "<group>"; };
-		908BC6ED12623944AA329B4CDEA4098A /* BBTemplaterValueProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterValueProcessor.h; sourceTree = "<group>"; };
-		90A19A994AF7757393CDF00921F49B88 /* BBTemplater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplater.m; sourceTree = "<group>"; };
-		94EFBD9890EB4F137DE7BB97B7C09BFC /* BBTemplaterTagSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagSearch.h; sourceTree = "<group>"; };
+		90BD6DBCCCE7A13168A5D446CD35CD22 /* BBTemplaterTagPreference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagPreference.m; sourceTree = "<group>"; };
+		9359A00D7EA11B6A25FC4C2E3FA0318F /* BBTemplaterTagHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagHeader.m; sourceTree = "<group>"; };
+		96146A108C70B3E490C2039362185F9E /* BBTemplaterGroupValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterGroupValueAnalyzer.h; sourceTree = "<group>"; };
 		979FF39C4E9BC3B910585A8895D8B3F2 /* LPXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99012140BB2BC0E9B2439B86AAA55AE2 /* BBTemplaterTagElse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagElse.h; sourceTree = "<group>"; };
 		99294128ACFC1A100C8034350AB700D2 /* LPXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LPXML.modulemap; sourceTree = "<group>"; };
-		9B09CA0F82B8D0615D3739D584D023BF /* BBTemplaterTagExecute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagExecute.h; sourceTree = "<group>"; };
-		A04A2350D5678DC2E8F23D352AE876A9 /* BBTemplaterTagCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagCallback.m; sourceTree = "<group>"; };
-		A0EF9B03CEE0E871C0615FAB23286889 /* BBTemplaterTagOut.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagOut.h; sourceTree = "<group>"; };
+		9B71A13633785D966D3EA7E799DC4213 /* BBTemplaterTagHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagHeader.h; sourceTree = "<group>"; };
+		A5C03B49DBD3E4435F50157BA14801D4 /* BBTemplaterResultValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterResultValueAnalyzer.m; sourceTree = "<group>"; };
 		A7064AEE59F8260C98A02B1A941B8E5D /* Pods_BBTemplater_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BBTemplater_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A81153A3C86D5EEDDAD62FD7168A9109 /* BBTemplaterTag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTag.m; sourceTree = "<group>"; };
-		A9BC189D0753A107721A609F437F41A8 /* BBTemplaterTagXpath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagXpath.h; sourceTree = "<group>"; };
-		AC4E092FB4C51AF4614E7E06816699D7 /* BBTemplaterTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTag.h; sourceTree = "<group>"; };
 		AC89D6E1E4B51B17891864DF626CED9C /* Pods-BBTemplater_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BBTemplater_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFC74477F0E6E7A4FEA2635C48ACA414 /* BBTemplaterPhoneByValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterPhoneByValueAnalyzer.m; sourceTree = "<group>"; };
+		B2B353FAEA4DCCFD0EC4180CDA511B66 /* BBTemplaterTagsProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagsProcessor.h; sourceTree = "<group>"; };
 		B2BB81125EB77EFB1819812C1A1ED975 /* Sequencer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sequencer-dummy.m"; sourceTree = "<group>"; };
 		B49BD5D51AA35CA9AAD850A817EEFFA3 /* LPXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LPXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B665FFAAEAA58EDF562629DCF6E09DCC /* BBTemplater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplater.h; sourceTree = "<group>"; };
 		B7815771911E359B66A292D427B912D8 /* Pods-BBTemplater_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BBTemplater_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B7BB21D38B6E2818597999F1486E3D12 /* LPXML-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPXML-dummy.m"; sourceTree = "<group>"; };
+		B82A672C8D549BE659DD652B93ED0887 /* BBTemplaterTagSubaccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagSubaccount.h; sourceTree = "<group>"; };
+		B9B490C0D893497D3049C9CD4051BC2F /* BBTemplaterContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterContext.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB426F48F75205056C1508CE97C53459 /* BBTemplaterErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterErrors.m; sourceTree = "<group>"; };
+		BC075DE2B1675E5ED344FEEDA9DBB360 /* BBTemplaterTagSubaccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagSubaccount.m; sourceTree = "<group>"; };
 		BF0F4945879E0C21D9B9CBB9A66C913E /* LPXML.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPXML.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9F7FE4C126C99B2BDB943AD0A98CF84 /* BBTemplaterTagXml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagXml.h; sourceTree = "<group>"; };
+		BFA992063C9E3F4FFC82EF6995404A36 /* BBTemplaterTagProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagProvider.h; sourceTree = "<group>"; };
+		C306F2CBB048AE527B26BF84EAC8A35D /* BBTemplaterTagExecute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagExecute.m; sourceTree = "<group>"; };
 		CA92C47BF6C3809896D3F6A62A6885A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB61257BE2073FB60F4F60DB3762138E /* BBTemplaterTagForeach.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagForeach.m; sourceTree = "<group>"; };
-		CD274FCF41394AA15E52D8E6516DE8CE /* BBTemplater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplater.h; sourceTree = "<group>"; };
-		CE321BA756B7F00B1FA1767689F81103 /* BBTemplaterTagSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagSearch.m; sourceTree = "<group>"; };
-		CFC4854B8C244F551E5445546125019C /* BBTemplaterStringUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterStringUtils.h; sourceTree = "<group>"; };
+		D0723434756B70A1A434188B94E5D39D /* BBTemplaterTagOut.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagOut.m; sourceTree = "<group>"; };
 		D0FB947441411E4BD17C65F1029783EE /* Sequencer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sequencer-umbrella.h"; sourceTree = "<group>"; };
+		D1CB957939FA1228AA44561E09DB8634 /* BBTemplaterTagParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagParam.h; sourceTree = "<group>"; };
 		D21CA5CBC5AC4800BFDB2977A34B9D45 /* BBTemplater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BBTemplater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3A1648947198CA3A9DDC547433A360B /* BBTemplaterResultValueAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterResultValueAnalyzer.h; sourceTree = "<group>"; };
-		D4FE04B88C3541B300FBC80BC810E9B2 /* BBTemplaterTagException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagException.m; sourceTree = "<group>"; };
-		D65BA44CEA5FD3932B4CA632D3BA8375 /* BBTemplaterTagOut.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagOut.m; sourceTree = "<group>"; };
-		DCC3F02B268EB687D1CCEEA9FEB845DF /* BBTemplaterTagException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagException.h; sourceTree = "<group>"; };
+		D2CFAFC79197D038B3692FAE251E07AE /* BBTemplaterPhoneValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterPhoneValueAnalyzer.m; sourceTree = "<group>"; };
+		D48530A74515EBD439FEF8E11FA29313 /* BBTemplaterFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterFunctions.h; sourceTree = "<group>"; };
+		D8EF5F8093EBDF9768A2413E6C34599A /* BBTemplaterTagForeach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagForeach.h; sourceTree = "<group>"; };
 		DE3C7507C863ACF20DE02D16EA3F9FD7 /* Sequencer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Sequencer.modulemap; sourceTree = "<group>"; };
-		DEEF415052052FAA4674230A9EDC3E3E /* BBTemplaterTagExecute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagExecute.m; sourceTree = "<group>"; };
+		DFAE6E2CAC29C12D1A4246A49B224DDE /* BBTemplaterTagSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagSearch.h; sourceTree = "<group>"; };
+		E0562B9712E375FE8166E2555438F349 /* BBTemplaterTagSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagSearch.m; sourceTree = "<group>"; };
 		E26A234CA735AAD6154F54618BB4941B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E3E0A373DEB3A8CF684AA3D30CC841A5 /* BBTemplaterTagXml.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagXml.m; sourceTree = "<group>"; };
 		E4F9AFC6DBE734C70C0265CF8ADF1B9E /* Sequencer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sequencer.h; path = Sequencer/Sequencer.h; sourceTree = "<group>"; };
 		E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPXML.xcconfig; sourceTree = "<group>"; };
+		EFB7D581A110D0B2836D8FFF31882B21 /* BBTemplaterTagParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagParam.m; sourceTree = "<group>"; };
 		F114BBE2E7DBCDD3C62AC9DA657EB96B /* Pods-BBTemplater_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BBTemplater_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F1258D83BE4E47BAEA3054D88385083F /* BBTemplaterTagHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagHeader.h; sourceTree = "<group>"; };
+		F4F7F1E9D0CCD1AA014DA0C4992E66EF /* BBTemplaterTagException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagException.h; sourceTree = "<group>"; };
+		F9B7459AD1D57583E6C32D4897A04C3C /* BBTemplaterTagVar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterTagVar.m; sourceTree = "<group>"; };
+		FAB5CEAC1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBTemplaterFunctionValueAnalyzer.h; sourceTree = "<group>"; };
+		FAB5CEAD1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterFunctionValueAnalyzer.m; sourceTree = "<group>"; };
+		FB33A22AA2481DB933D56E855854E41B /* BBTemplaterGenericValueAnalyzer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BBTemplaterGenericValueAnalyzer.m; sourceTree = "<group>"; };
+		FB7332E17013610E3150AC55DE5258AF /* BBTemplaterErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterErrors.h; sourceTree = "<group>"; };
+		FEC760292BA95F584DA9164770685BA3 /* BBTemplaterTagExecute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BBTemplaterTagExecute.h; sourceTree = "<group>"; };
 		FFB4988604D20012F98AE1A393510737 /* BBTemplater.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BBTemplater.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		14F46CDD9B894526B912F9FE08E47A9F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C2CBD6141B76840479F1965D9EC0FCB /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2DB9600DA8A9C313BB3338B649979453 /* Frameworks */ = {
+		03BB7DA49463B312E5363F5BA0912A5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFB202109A40463E1B66750CAF898A4F /* Frameworks */ = {
+		17F447B6ECD00BDB8087D45561837C68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				490046622935CBA75E235793733FF910 /* Foundation.framework in Frameworks */,
+				0E0D7C68495C7FAA4CA0B6398E7F5604 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A42A28C90F957F04AE2B7544D0186A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,20 +283,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC22F6E7E665C1BA85DAFA28FB9F9FD8 /* Frameworks */ = {
+		EBD1B0209B12EB58B7F5A06312CA0CC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78DE7591B17B6A1F39DBE6F973D9A4D /* Foundation.framework in Frameworks */,
+				252BAAC6D757DC25488204B64073FB99 /* LPXML.framework in Frameworks */,
+				C6E54D115AD6083A428ED143ECD1137F /* Sequencer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1E9F8EE621E469AD1B3C37705EF2230 /* Frameworks */ = {
+		FF9A3B20F45507D2E7BC411BFB0F2875 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A04363A4A45A3F29E0767675FF7CDD61 /* Foundation.framework in Frameworks */,
-				A9D49CC8365082A04463092E4236878D /* LPXML.framework in Frameworks */,
-				037FF6C5DCC81158B1FACAD941B373BB /* Sequencer.framework in Frameworks */,
+				CE5059AD292B6D4AA9B3D933C62DBB2F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +314,33 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		29D0142C7F33DCCC369097C0ABD526D6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B665FFAAEAA58EDF562629DCF6E09DCC /* BBTemplater.h */,
+				8B38CC18E9F30B757CFD5E1F4B7B191C /* BBTemplater.m */,
+				B9B490C0D893497D3049C9CD4051BC2F /* BBTemplaterContext.h */,
+				37F1DCBF1B5F3DF9376AC5A8A9090058 /* BBTemplaterContext.m */,
+				FB7332E17013610E3150AC55DE5258AF /* BBTemplaterErrors.h */,
+				BB426F48F75205056C1508CE97C53459 /* BBTemplaterErrors.m */,
+				D48530A74515EBD439FEF8E11FA29313 /* BBTemplaterFunctions.h */,
+				2E5859286C62DD6EC4AD9145E4808D46 /* BBTemplaterFunctions.m */,
+				55CA3051B67BBE5B05732E59BD6F3857 /* BBTemplaterStringUtils.h */,
+				8E646DF2C0FB6F5107D2173073630725 /* BBTemplaterStringUtils.m */,
+				B2B353FAEA4DCCFD0EC4180CDA511B66 /* BBTemplaterTagsProcessor.h */,
+				18107DDA7FA1FF59DC469829EB35C36E /* BBTemplaterTagsProcessor.m */,
+				8B9FB3809F302DF60F895FF2F57062E1 /* BBTemplaterTagsProvider.h */,
+				89CF6B83F9CA59DF8664A9B554D855BA /* BBTemplaterTagsProvider.m */,
+				E2BED89207D2DB272ECC8808ACC6B39A /* tags */,
+				523A6DFB79F5F7FE8C209B51213E97F8 /* valueCalculator */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2F95801BCCF3240F1F684706E84EBB70 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				60D3FD180340C6651515C10AC57E9052 /* Classes */,
+				29D0142C7F33DCCC369097C0ABD526D6 /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -332,27 +359,26 @@
 			path = "../Target Support Files/LPXML";
 			sourceTree = "<group>";
 		};
-		60D3FD180340C6651515C10AC57E9052 /* Classes */ = {
+		523A6DFB79F5F7FE8C209B51213E97F8 /* valueCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				CD274FCF41394AA15E52D8E6516DE8CE /* BBTemplater.h */,
-				90A19A994AF7757393CDF00921F49B88 /* BBTemplater.m */,
-				6FF965574726C593939CE849B241A9D2 /* BBTemplaterContext.h */,
-				8BF7484D0217496681A776F6B9CE257C /* BBTemplaterContext.m */,
-				4DE214E24C1EA5BE11B3D191D60F38B1 /* BBTemplaterErrors.h */,
-				58AA069F2965F33B37B904A0009DB9D3 /* BBTemplaterErrors.m */,
-				8A29E63EEA358410D4C57C2E8CF601CB /* BBTemplaterFunctions.h */,
-				02BA954CACE33A2B7611E64B70179B0C /* BBTemplaterFunctions.m */,
-				CFC4854B8C244F551E5445546125019C /* BBTemplaterStringUtils.h */,
-				0A46794EF542AE658AA713F60E7C1C71 /* BBTemplaterStringUtils.m */,
-				8F1246346544132DF1468617AB370359 /* BBTemplaterTagsProcessor.h */,
-				577C787F4C3969F05D73C6CC7A5D8A13 /* BBTemplaterTagsProcessor.m */,
-				16F686A4F4F41E6D2BA1982925C3C3C9 /* BBTemplaterTagsProvider.h */,
-				2C3514095C87BD24728C270C0EAB8587 /* BBTemplaterTagsProvider.m */,
-				AE681227674B46C90BB5631FBCD3A31D /* tags */,
-				AA80DE41A9BD6693EB3DF873785858C3 /* valueCalculator */,
+				FAB5CEAC1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.h */,
+				FAB5CEAD1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.m */,
+				25B21CA78E3E1A56CCFA6310B548A523 /* BBTemplaterGenericValueAnalyzer.h */,
+				FB33A22AA2481DB933D56E855854E41B /* BBTemplaterGenericValueAnalyzer.m */,
+				96146A108C70B3E490C2039362185F9E /* BBTemplaterGroupValueAnalyzer.h */,
+				50860A789CC617FFE7BB2882BD93ED3B /* BBTemplaterGroupValueAnalyzer.m */,
+				64E7BCD44196EAF31F3E636A966ED7C6 /* BBTemplaterPhoneByValueAnalyzer.h */,
+				AFC74477F0E6E7A4FEA2635C48ACA414 /* BBTemplaterPhoneByValueAnalyzer.m */,
+				155F01503A61E9F83F1D7C99A08929A2 /* BBTemplaterPhoneValueAnalyzer.h */,
+				D2CFAFC79197D038B3692FAE251E07AE /* BBTemplaterPhoneValueAnalyzer.m */,
+				61400585E8C93CEA2B40C0A52EED00BF /* BBTemplaterResultValueAnalyzer.h */,
+				A5C03B49DBD3E4435F50157BA14801D4 /* BBTemplaterResultValueAnalyzer.m */,
+				4ED2072EA4D3B4CDA0764120E6A79DC9 /* BBTemplaterValueAnalyzer.h */,
+				38C1E790D574081AA3122570F4CC92E8 /* BBTemplaterValueProcessor.h */,
+				23214A7531F6A74828D35E1671B4C223 /* BBTemplaterValueProcessor.m */,
 			);
-			path = Classes;
+			path = valueCalculator;
 			sourceTree = "<group>";
 		};
 		65592AC6334234726F4EDB05AC888319 /* iOS */ = {
@@ -423,26 +449,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		AA80DE41A9BD6693EB3DF873785858C3 /* valueCalculator */ = {
-			isa = PBXGroup;
-			children = (
-				7547643AF8568427F4C97F922B4C444A /* BBTemplaterGenericValueAnalyzer.h */,
-				24E66347D9077455D68CFD5EBD8B2D0F /* BBTemplaterGenericValueAnalyzer.m */,
-				0FBB90F6EDD819B282C7AF65C027B4E3 /* BBTemplaterGroupValueAnalyzer.h */,
-				07D8BCF1178A52FFF4CA632463786DEF /* BBTemplaterGroupValueAnalyzer.m */,
-				0321E0A536B7DA8C8ED9893A42484058 /* BBTemplaterPhoneByValueAnalyzer.h */,
-				23B73F40A92D78A42386125A9412B14C /* BBTemplaterPhoneByValueAnalyzer.m */,
-				075A0977FCA6E40D6FA441938C40F509 /* BBTemplaterPhoneValueAnalyzer.h */,
-				1D2CF538D06CDDBFD3E17D03B6EF2996 /* BBTemplaterPhoneValueAnalyzer.m */,
-				D3A1648947198CA3A9DDC547433A360B /* BBTemplaterResultValueAnalyzer.h */,
-				039138F0A90A1C0E63874A341A401676 /* BBTemplaterResultValueAnalyzer.m */,
-				5D7C112601295DE7AFA9A0FF83B2FD41 /* BBTemplaterValueAnalyzer.h */,
-				908BC6ED12623944AA329B4CDEA4098A /* BBTemplaterValueProcessor.h */,
-				51498051D440EBE87D57ACF6AAF7DA1B /* BBTemplaterValueProcessor.m */,
-			);
-			path = valueCalculator;
-			sourceTree = "<group>";
-		};
 		ADCDB396A54949DC2BD79E8384791AE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,47 +457,6 @@
 				65592AC6334234726F4EDB05AC888319 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AE681227674B46C90BB5631FBCD3A31D /* tags */ = {
-			isa = PBXGroup;
-			children = (
-				AC4E092FB4C51AF4614E7E06816699D7 /* BBTemplaterTag.h */,
-				A81153A3C86D5EEDDAD62FD7168A9109 /* BBTemplaterTag.m */,
-				136BB1B3D9CE4F4AFE4C0D66A7210459 /* BBTemplaterTagCallback.h */,
-				A04A2350D5678DC2E8F23D352AE876A9 /* BBTemplaterTagCallback.m */,
-				750D2314F76FB1936267CDBD1AA0AE0C /* BBTemplaterTagElse.h */,
-				4600F8DAE2BD123EA562D836013CAF01 /* BBTemplaterTagElse.m */,
-				DCC3F02B268EB687D1CCEEA9FEB845DF /* BBTemplaterTagException.h */,
-				D4FE04B88C3541B300FBC80BC810E9B2 /* BBTemplaterTagException.m */,
-				9B09CA0F82B8D0615D3739D584D023BF /* BBTemplaterTagExecute.h */,
-				DEEF415052052FAA4674230A9EDC3E3E /* BBTemplaterTagExecute.m */,
-				20693D88022C1DC2A5A3BB952384E698 /* BBTemplaterTagForeach.h */,
-				CB61257BE2073FB60F4F60DB3762138E /* BBTemplaterTagForeach.m */,
-				F1258D83BE4E47BAEA3054D88385083F /* BBTemplaterTagHeader.h */,
-				5BEC475745DA677BCD9C4F5DADE62FC6 /* BBTemplaterTagHeader.m */,
-				A0EF9B03CEE0E871C0615FAB23286889 /* BBTemplaterTagOut.h */,
-				D65BA44CEA5FD3932B4CA632D3BA8375 /* BBTemplaterTagOut.m */,
-				1C2E4AB8E8AE0F56992489D2CD890520 /* BBTemplaterTagParam.h */,
-				125EA8584287B535BAD0C044BADDC41B /* BBTemplaterTagParam.m */,
-				0AC37FB70C43C17C411EBDA72F3B7BF5 /* BBTemplaterTagPreference.h */,
-				4B4FD372CFB6D87339F625A96971EE06 /* BBTemplaterTagPreference.m */,
-				24837F93D5F76CF373B00B4FD2AE9BC1 /* BBTemplaterTagProvider.h */,
-				07F3E4D9BECEAF495E4BBE32601B2350 /* BBTemplaterTagProvider.m */,
-				94EFBD9890EB4F137DE7BB97B7C09BFC /* BBTemplaterTagSearch.h */,
-				CE321BA756B7F00B1FA1767689F81103 /* BBTemplaterTagSearch.m */,
-				8F577646EE8E0F932B56180D0F54ACF3 /* BBTemplaterTagSubaccount.h */,
-				8C00A9EBCACB7F5F5E7E6355C71519DF /* BBTemplaterTagSubaccount.m */,
-				03F104BE0AC9B98B21CA9378A8DFE4BA /* BBTemplaterTagToast.h */,
-				128EE6745A0FF27F6A67DAA70FFE40DC /* BBTemplaterTagToast.m */,
-				4ED078CE406986E38EB3F22706CA1F3D /* BBTemplaterTagVar.h */,
-				3FC804DA64BF4EEEB1F6466E7AD971AB /* BBTemplaterTagVar.m */,
-				C9F7FE4C126C99B2BDB943AD0A98CF84 /* BBTemplaterTagXml.h */,
-				25B85503F332AADDD09581B44EEB6A6E /* BBTemplaterTagXml.m */,
-				A9BC189D0753A107721A609F437F41A8 /* BBTemplaterTagXpath.h */,
-				4C1AD0D4842E41580A8660D91B8C1D22 /* BBTemplaterTagXpath.m */,
-			);
-			path = tags;
 			sourceTree = "<group>";
 		};
 		C208AA74BD1B11E5637439BD6A1302A2 /* Support Files */ = {
@@ -527,6 +492,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E2BED89207D2DB272ECC8808ACC6B39A /* tags */ = {
+			isa = PBXGroup;
+			children = (
+				56EB81477AFE5C15D26886FB46BE0CA8 /* BBTemplaterTag.h */,
+				402C7BD726725A845B1AC5B8EFE72E7E /* BBTemplaterTag.m */,
+				533150D92B71626C3B8A1186D444FA0F /* BBTemplaterTagCallback.h */,
+				58975EF589FB6566966F2A7CAEEA8145 /* BBTemplaterTagCallback.m */,
+				99012140BB2BC0E9B2439B86AAA55AE2 /* BBTemplaterTagElse.h */,
+				7969D99A77B8CA25CC499A31D82FDCEB /* BBTemplaterTagElse.m */,
+				F4F7F1E9D0CCD1AA014DA0C4992E66EF /* BBTemplaterTagException.h */,
+				0A4227C694DB492935E1A985A991488B /* BBTemplaterTagException.m */,
+				FEC760292BA95F584DA9164770685BA3 /* BBTemplaterTagExecute.h */,
+				C306F2CBB048AE527B26BF84EAC8A35D /* BBTemplaterTagExecute.m */,
+				D8EF5F8093EBDF9768A2413E6C34599A /* BBTemplaterTagForeach.h */,
+				8608DCE49AAAA575D9015BACD2950205 /* BBTemplaterTagForeach.m */,
+				9B71A13633785D966D3EA7E799DC4213 /* BBTemplaterTagHeader.h */,
+				9359A00D7EA11B6A25FC4C2E3FA0318F /* BBTemplaterTagHeader.m */,
+				66EC510ABF65BA0A7B6EE32AE3F17FCE /* BBTemplaterTagOut.h */,
+				D0723434756B70A1A434188B94E5D39D /* BBTemplaterTagOut.m */,
+				D1CB957939FA1228AA44561E09DB8634 /* BBTemplaterTagParam.h */,
+				EFB7D581A110D0B2836D8FFF31882B21 /* BBTemplaterTagParam.m */,
+				03377AD440B1E156E3B523201106CF8C /* BBTemplaterTagPreference.h */,
+				90BD6DBCCCE7A13168A5D446CD35CD22 /* BBTemplaterTagPreference.m */,
+				BFA992063C9E3F4FFC82EF6995404A36 /* BBTemplaterTagProvider.h */,
+				007533E3318E8AC161C9CFFD737F8971 /* BBTemplaterTagProvider.m */,
+				DFAE6E2CAC29C12D1A4246A49B224DDE /* BBTemplaterTagSearch.h */,
+				E0562B9712E375FE8166E2555438F349 /* BBTemplaterTagSearch.m */,
+				B82A672C8D549BE659DD652B93ED0887 /* BBTemplaterTagSubaccount.h */,
+				BC075DE2B1675E5ED344FEEDA9DBB360 /* BBTemplaterTagSubaccount.m */,
+				6A80CD2ED949FE1CC730B4D219118545 /* BBTemplaterTagToast.h */,
+				3C7EDDABB455C96D63A01B2E14925E2A /* BBTemplaterTagToast.m */,
+				7285B12D96C4DAB357517EAFED2555E1 /* BBTemplaterTagVar.h */,
+				F9B7459AD1D57583E6C32D4897A04C3C /* BBTemplaterTagVar.m */,
+				2A26C9E421B789099769C06E8D9F0648 /* BBTemplaterTagXml.h */,
+				E3E0A373DEB3A8CF684AA3D30CC841A5 /* BBTemplaterTagXml.m */,
+				7B2DEFF9B3C76BEF2B17E2D50156D7DF /* BBTemplaterTagXpath.h */,
+				61603947888B4FF61E3E865FC36769EF /* BBTemplaterTagXpath.m */,
+			);
+			path = tags;
+			sourceTree = "<group>";
+		};
 		E48E48C72B726E05625304A429E72D0E /* Sequencer */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,45 +559,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1B9F018618DB8C788B077AC8BBDF8822 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B05B5EB7A51D2A1D9287A11A273461B6 /* BBTemplater-umbrella.h in Headers */,
-				0858E9C62578934726DA892100F332AB /* BBTemplater.h in Headers */,
-				24A5DB24FDBEAADD6E81732E6EDE232B /* BBTemplaterContext.h in Headers */,
-				BA933F995E1BE1FE6D8F0A495AE4D6BE /* BBTemplaterErrors.h in Headers */,
-				DA5DA40F4871995D4323AA13B4B5D452 /* BBTemplaterFunctions.h in Headers */,
-				D3D7C8C79E6B3327D6DA2610A8C53469 /* BBTemplaterGenericValueAnalyzer.h in Headers */,
-				1DAF84B158CF6F14C514C291B81DB374 /* BBTemplaterGroupValueAnalyzer.h in Headers */,
-				8E299846561C4DD1F534D29DF8692A7D /* BBTemplaterPhoneByValueAnalyzer.h in Headers */,
-				018B47E0F6F69EC0D1EFD1166D47DDFD /* BBTemplaterPhoneValueAnalyzer.h in Headers */,
-				AD3368675A3AA54DBB24DECED0AC52C0 /* BBTemplaterResultValueAnalyzer.h in Headers */,
-				E05A9B10E5DE86E103B4B130F0994A61 /* BBTemplaterStringUtils.h in Headers */,
-				9E25D58AA1A1296CDA0A45DE7683265C /* BBTemplaterTag.h in Headers */,
-				5DBE45527AAFF21E61CAA34FFEE11BB1 /* BBTemplaterTagCallback.h in Headers */,
-				90C84A362614FDFC4FB2C7B4BB762DB7 /* BBTemplaterTagElse.h in Headers */,
-				9DFB4CC2E46F520FE32521E914BA2ECC /* BBTemplaterTagException.h in Headers */,
-				AEFC05595359EADB4D08B32ED62378B4 /* BBTemplaterTagExecute.h in Headers */,
-				15AB4905ECE4A8AD60C56B4378FD171A /* BBTemplaterTagForeach.h in Headers */,
-				1C03D9D10846AC743FDF3CD6203EFE49 /* BBTemplaterTagHeader.h in Headers */,
-				C7E1A7A7898B54B36787BD22EAA8F424 /* BBTemplaterTagOut.h in Headers */,
-				B7610E90FF77432C4CE5D6E3ADF3D6CE /* BBTemplaterTagParam.h in Headers */,
-				7927CB2DD6A7303E507227C6627220E4 /* BBTemplaterTagPreference.h in Headers */,
-				CBD2DFB54A72F76513B88A7EE4BF4883 /* BBTemplaterTagProvider.h in Headers */,
-				4A403D6863975D48C96D30F79BEEC12B /* BBTemplaterTagSearch.h in Headers */,
-				9B81956A354DBAF0BF4359BD8F41E0A5 /* BBTemplaterTagsProcessor.h in Headers */,
-				1F1A1B9EFC547D7BC523A4F37C317CC0 /* BBTemplaterTagsProvider.h in Headers */,
-				053A91F03E2B92D79E7E2687E2F1CE85 /* BBTemplaterTagSubaccount.h in Headers */,
-				97AD764DED8691A2CEE387E0FE2764BF /* BBTemplaterTagToast.h in Headers */,
-				1568EF7AF9E3F3A7C9C0C58DC3489177 /* BBTemplaterTagVar.h in Headers */,
-				27C868D0B76EED6CA11C11E4C479CB0D /* BBTemplaterTagXml.h in Headers */,
-				F0A7470E17AF3437891E0DF992DE9A97 /* BBTemplaterTagXpath.h in Headers */,
-				2D439B3F8A788F41335A37061E7A1DE4 /* BBTemplaterValueAnalyzer.h in Headers */,
-				F9DDAC7D79440500887C4C98418CFB7A /* BBTemplaterValueProcessor.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		291B3EB7800F094739D041F3AB2540F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -600,60 +567,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		77EE63C513A81399E0D0538A6C851AA1 /* Headers */ = {
+		4199C685055D78984F9F3952B09FAD22 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF1EACB46BD2A35B7F9B4B55BEBF3B3 /* LPXML-umbrella.h in Headers */,
-				ADD1C1FF81E075ACB42A61FE53943DAE /* LPXML.h in Headers */,
+				822DD17E8063CC27362385C2ADDCD602 /* Sequencer-umbrella.h in Headers */,
+				E3CE55F52EFEC4451777E93CCF88069A /* Sequencer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8962EBB8E6B7101CD5940ADB2D095EAE /* Headers */ = {
+		C70E6719C386A92596E83686E04895CF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959C75C77508194407C9FFA98A078DFA /* Sequencer-umbrella.h in Headers */,
-				F04F2EC55792084F925C90D9D784FBFC /* Sequencer.h in Headers */,
+				A5359A06E12F783DACC76D9B9DA6344D /* BBTemplater-umbrella.h in Headers */,
+				CC0DDE5E25365E5BC57F24BAC540E4F3 /* BBTemplater.h in Headers */,
+				2754B65E736D508174C496092CFEC3D6 /* BBTemplaterContext.h in Headers */,
+				1D7CF8FE0A99EC27AEE13150F7E1C69E /* BBTemplaterErrors.h in Headers */,
+				C856BE169BAC571DF5096B2EF4B34DCF /* BBTemplaterFunctions.h in Headers */,
+				4B80C4C743F991C666B00DE71E1E0615 /* BBTemplaterGenericValueAnalyzer.h in Headers */,
+				A2D6DFA7A96FB1BFD793DB95E011F641 /* BBTemplaterGroupValueAnalyzer.h in Headers */,
+				2AF0B06A51C96C32F2E34AFD62C0BF24 /* BBTemplaterPhoneByValueAnalyzer.h in Headers */,
+				99D1B88E6ADD99FE5846D36497624E95 /* BBTemplaterPhoneValueAnalyzer.h in Headers */,
+				5EDEAC0EB9F299DE97A7533F1161BF42 /* BBTemplaterResultValueAnalyzer.h in Headers */,
+				C175C94BDD2BC093919AA9E70DF3E244 /* BBTemplaterStringUtils.h in Headers */,
+				080856A80D106733D8E387CD422F61E6 /* BBTemplaterTag.h in Headers */,
+				EEB9576D3A8C56C3B055DCBFCF8EA452 /* BBTemplaterTagCallback.h in Headers */,
+				C04DF2936E2A321EC43169842984390B /* BBTemplaterTagElse.h in Headers */,
+				8722BB6C941E3F7DB7E8D68AAAB4A635 /* BBTemplaterTagException.h in Headers */,
+				7F10E7A679B2143DC85663232CA6B6B6 /* BBTemplaterTagExecute.h in Headers */,
+				4AE77ABE1A88582A2D74D4326E056EA3 /* BBTemplaterTagForeach.h in Headers */,
+				0B57EC91CC265F44AF433FA989384FC8 /* BBTemplaterTagHeader.h in Headers */,
+				AAC1491CC213CE0AF13477E8EF4958A4 /* BBTemplaterTagOut.h in Headers */,
+				6F3B37E368A70D267EA73A112313BB3F /* BBTemplaterTagParam.h in Headers */,
+				8F8567BEABF529C60A358606FD8CDE6B /* BBTemplaterTagPreference.h in Headers */,
+				AF092AF1C0E35EC2A8742CC541FAB334 /* BBTemplaterTagProvider.h in Headers */,
+				8AA897858A83F1E71C8744F5A5B645B0 /* BBTemplaterTagSearch.h in Headers */,
+				87AA88607DF85DD28A1C85F8CDF367C0 /* BBTemplaterTagsProcessor.h in Headers */,
+				636CFCC1FEE09AA48A5F5D5219CEA568 /* BBTemplaterTagsProvider.h in Headers */,
+				FAB5CEAE1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.h in Headers */,
+				6DF791B0D3D0951581D8CCB0F67E516D /* BBTemplaterTagSubaccount.h in Headers */,
+				4E9AAF0FC413B60F238F40CBD2E679B8 /* BBTemplaterTagToast.h in Headers */,
+				3B06EB6F90CC82FB90470D7172C5EE35 /* BBTemplaterTagVar.h in Headers */,
+				7FA3D04D6D13DC6DD4739F7C8D864AA7 /* BBTemplaterTagXml.h in Headers */,
+				C05D3EC716E52EB5E81924994B82E402 /* BBTemplaterTagXpath.h in Headers */,
+				FC7BB898A983A8AA3AE72183A1360364 /* BBTemplaterValueAnalyzer.h in Headers */,
+				3660D52DA668C92E6343A42650A36CE3 /* BBTemplaterValueProcessor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9479119BBF66E602228B09B5C72AF5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7256A0538157AC8289B1AE7E450AA70C /* LPXML-umbrella.h in Headers */,
+				1B798E48C42B2DF56515BA929B37C732 /* LPXML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2640853FF20AADDB8CC71FDB0D4C3E52 /* BBTemplater-BBTemplater */ = {
+		030A0284F54A6ED435DFF28CBF274724 /* LPXML-LPXML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E23DDF6006D43DC9DD678BDB5EDBA77 /* Build configuration list for PBXNativeTarget "BBTemplater-BBTemplater" */;
+			buildConfigurationList = 53ECE76EB079B1D56021F1AE163F7B3E /* Build configuration list for PBXNativeTarget "LPXML-LPXML" */;
 			buildPhases = (
-				974E88E5663DFE3E0D192AE9C6673D30 /* Sources */,
-				DC22F6E7E665C1BA85DAFA28FB9F9FD8 /* Frameworks */,
-				958F72A5C46C311E9E041418EA72F839 /* Resources */,
+				CAF47AF69FEE52B8B9EF1FA53BF52057 /* Sources */,
+				03BB7DA49463B312E5363F5BA0912A5C /* Frameworks */,
+				DF90FB9422ADA73C03931C261C27905D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "BBTemplater-BBTemplater";
-			productName = "BBTemplater-BBTemplater";
-			productReference = 85498FE306AF617D1042C59BD7425113 /* BBTemplater.bundle */;
+			name = "LPXML-LPXML";
+			productName = "LPXML-LPXML";
+			productReference = BF0F4945879E0C21D9B9CBB9A66C913E /* LPXML.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		5186B516C350A83F4133098E65F7513C /* Sequencer */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E663408DB5CB10C55541DED165339010 /* Build configuration list for PBXNativeTarget "Sequencer" */;
-			buildPhases = (
-				1950FC411AA4C06347571F6D893E997F /* Sources */,
-				14F46CDD9B894526B912F9FE08E47A9F /* Frameworks */,
-				8962EBB8E6B7101CD5940ADB2D095EAE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Sequencer;
-			productName = Sequencer;
-			productReference = 50424931F2D3FCAA47C1E1990E9A2732 /* Sequencer.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		59A480FAB0C75647C3BF405F20AC6368 /* Pods-BBTemplater_Tests */ = {
 			isa = PBXNativeTarget;
@@ -675,62 +665,79 @@
 			productReference = A7064AEE59F8260C98A02B1A941B8E5D /* Pods_BBTemplater_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F6E074EF22E1D9B744A1C4472C360B9 /* BBTemplater */ = {
+		855B5CE24BE5A112084AE920B4501CDB /* LPXML */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DA3CAAA3A256123AFB6413706098F5F /* Build configuration list for PBXNativeTarget "BBTemplater" */;
+			buildConfigurationList = E20ADA70A363699067AE7CC57F13FBDB /* Build configuration list for PBXNativeTarget "LPXML" */;
 			buildPhases = (
-				78DC55EDEDCF5CA1A19FF4CB0FF35263 /* Sources */,
-				F1E9F8EE621E469AD1B3C37705EF2230 /* Frameworks */,
-				F723CE2E7F3B692DABC84D940ECC7176 /* Resources */,
-				1B9F018618DB8C788B077AC8BBDF8822 /* Headers */,
+				DFEF6774FEC50F59F9A30E0963674354 /* Sources */,
+				FF9A3B20F45507D2E7BC411BFB0F2875 /* Frameworks */,
+				0414637B037B71B64CA0E0824B67A942 /* Resources */,
+				E9479119BBF66E602228B09B5C72AF5A /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				531B6DE432ADF9859725DA814DC5C495 /* PBXTargetDependency */,
-				9CE82B98A214A3D5DDAF73F5CA51D904 /* PBXTargetDependency */,
-				D88E3CAFE6AE87A944C49A1A8C4CC57E /* PBXTargetDependency */,
+				E40A4995E86656C8138CCEB48A20095E /* PBXTargetDependency */,
+			);
+			name = LPXML;
+			productName = LPXML;
+			productReference = 979FF39C4E9BC3B910585A8895D8B3F2 /* LPXML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A0652A044FFDC871865B8BEE893D1C5C /* Sequencer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E91D6AF6EB901A3639FAAC3AEA48EB4 /* Build configuration list for PBXNativeTarget "Sequencer" */;
+			buildPhases = (
+				3FB866819319BBEA2B322E845EFBFFC8 /* Sources */,
+				17F447B6ECD00BDB8087D45561837C68 /* Frameworks */,
+				4199C685055D78984F9F3952B09FAD22 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sequencer;
+			productName = Sequencer;
+			productReference = 50424931F2D3FCAA47C1E1990E9A2732 /* Sequencer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7A0B2731D6100016C0D8A2226741564 /* BBTemplater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9337948DE0140198522310029FA855 /* Build configuration list for PBXNativeTarget "BBTemplater" */;
+			buildPhases = (
+				1ECA4E95B6CDB096DAB55953682CAC14 /* Sources */,
+				EBD1B0209B12EB58B7F5A06312CA0CC1 /* Frameworks */,
+				DA0B017D428D1DE87B1BF38311336F44 /* Resources */,
+				C70E6719C386A92596E83686E04895CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A04C4A7E60DCD28ADC9B4DA430E158 /* PBXTargetDependency */,
+				13588E55F6A12B2B772CFD6775BB6AB2 /* PBXTargetDependency */,
+				3E7BC503F04A4DD4E29D5751C1DB7CE8 /* PBXTargetDependency */,
 			);
 			name = BBTemplater;
 			productName = BBTemplater;
 			productReference = D21CA5CBC5AC4800BFDB2977A34B9D45 /* BBTemplater.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C0FCFA0AD44219752BC702B88DBB87B8 /* LPXML-LPXML */ = {
+		FA8DFB2ACD02286C3C8D932C4CF93936 /* BBTemplater-BBTemplater */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F90456B1661B252C217C9F5431D41897 /* Build configuration list for PBXNativeTarget "LPXML-LPXML" */;
+			buildConfigurationList = B05FD0EA72403CB63CD7413BEB3259C9 /* Build configuration list for PBXNativeTarget "BBTemplater-BBTemplater" */;
 			buildPhases = (
-				552851BBF433FB5B531D40E45D3FB2BB /* Sources */,
-				2DB9600DA8A9C313BB3338B649979453 /* Frameworks */,
-				41A475D81726E9C87084A7281AFD070A /* Resources */,
+				BB89D2B4FF61711DA762366DA97A99C1 /* Sources */,
+				36A42A28C90F957F04AE2B7544D0186A /* Frameworks */,
+				DD372011A5ACD10E9BBF0408D9405853 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "LPXML-LPXML";
-			productName = "LPXML-LPXML";
-			productReference = BF0F4945879E0C21D9B9CBB9A66C913E /* LPXML.bundle */;
+			name = "BBTemplater-BBTemplater";
+			productName = "BBTemplater-BBTemplater";
+			productReference = 85498FE306AF617D1042C59BD7425113 /* BBTemplater.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		ED7BC433EA76827636795FC236105472 /* LPXML */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3AA566DFDDDBB53097E7BBE79F45C209 /* Build configuration list for PBXNativeTarget "LPXML" */;
-			buildPhases = (
-				1457E1E413D5AA6C85D63CC736870CA8 /* Sources */,
-				BFB202109A40463E1B66750CAF898A4F /* Frameworks */,
-				1079CBF15556858DA57218D46F0A33A4 /* Resources */,
-				77EE63C513A81399E0D0538A6C851AA1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D6C7D0DA63B0865138972F1737FF814A /* PBXTargetDependency */,
-			);
-			name = LPXML;
-			productName = LPXML;
-			productReference = 979FF39C4E9BC3B910585A8895D8B3F2 /* LPXML.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -753,114 +760,99 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9F6E074EF22E1D9B744A1C4472C360B9 /* BBTemplater */,
-				2640853FF20AADDB8CC71FDB0D4C3E52 /* BBTemplater-BBTemplater */,
-				ED7BC433EA76827636795FC236105472 /* LPXML */,
-				C0FCFA0AD44219752BC702B88DBB87B8 /* LPXML-LPXML */,
+				C7A0B2731D6100016C0D8A2226741564 /* BBTemplater */,
+				FA8DFB2ACD02286C3C8D932C4CF93936 /* BBTemplater-BBTemplater */,
+				855B5CE24BE5A112084AE920B4501CDB /* LPXML */,
+				030A0284F54A6ED435DFF28CBF274724 /* LPXML-LPXML */,
 				59A480FAB0C75647C3BF405F20AC6368 /* Pods-BBTemplater_Tests */,
-				5186B516C350A83F4133098E65F7513C /* Sequencer */,
+				A0652A044FFDC871865B8BEE893D1C5C /* Sequencer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1079CBF15556858DA57218D46F0A33A4 /* Resources */ = {
+		0414637B037B71B64CA0E0824B67A942 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5000560605BE77DB6C7438609276A65 /* LPXML.bundle in Resources */,
+				2B31DEFA573AE36764C9BB29140F0304 /* LPXML.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41A475D81726E9C87084A7281AFD070A /* Resources */ = {
+		DA0B017D428D1DE87B1BF38311336F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35965421FAA0BC97B78652C12EC2FB53 /* BBTemplater.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD372011A5ACD10E9BBF0408D9405853 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		958F72A5C46C311E9E041418EA72F839 /* Resources */ = {
+		DF90FB9422ADA73C03931C261C27905D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F723CE2E7F3B692DABC84D940ECC7176 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A8311A1B35373CD408142B1C0305DBBD /* BBTemplater.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1457E1E413D5AA6C85D63CC736870CA8 /* Sources */ = {
+		1ECA4E95B6CDB096DAB55953682CAC14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56D52A09AC7142849B1836AA3C8F263C /* LPXML-dummy.m in Sources */,
-				7FAD74831BE2BC602A54DB8C801E5A12 /* LPXML.m in Sources */,
+				EA28B7B33A58D4CEE976C7D59CA9A42E /* BBTemplater-dummy.m in Sources */,
+				9CD1CDE8C353CFF2CB6A586E9A8994B6 /* BBTemplater.m in Sources */,
+				CE32A6A2384F23795E8A3CDB88D3D47B /* BBTemplaterContext.m in Sources */,
+				3E13C11429FBE4E4C36E14EB81C54EB0 /* BBTemplaterErrors.m in Sources */,
+				65765169A02AB2454DD7082F2004232B /* BBTemplaterFunctions.m in Sources */,
+				F12C08DF469496CA3662F8BD8EE91153 /* BBTemplaterGenericValueAnalyzer.m in Sources */,
+				AD2A40A3A8ED5B45CAECA3652C5AB34E /* BBTemplaterGroupValueAnalyzer.m in Sources */,
+				B44D9F0F5377E3E57E0A5B07246C50F5 /* BBTemplaterPhoneByValueAnalyzer.m in Sources */,
+				76367AAEA8058D2E438BE3E86979C961 /* BBTemplaterPhoneValueAnalyzer.m in Sources */,
+				FA3433D5CD87ED8C5EAFE7CC98499294 /* BBTemplaterResultValueAnalyzer.m in Sources */,
+				5928BDE8710E40D5A185F57D3D2BFF0C /* BBTemplaterStringUtils.m in Sources */,
+				68D5C1CDC197F38D6FA1A4C0DF5BB974 /* BBTemplaterTag.m in Sources */,
+				1175E63484BB56BDA3DDF3FBF588DAF0 /* BBTemplaterTagCallback.m in Sources */,
+				627DB1D2773787B4E65A6AC347A4F2E3 /* BBTemplaterTagElse.m in Sources */,
+				03C606CDD5CB7055CED056A00E2F8E39 /* BBTemplaterTagException.m in Sources */,
+				7D40B3C32798EA9817D1FC4F08EE237C /* BBTemplaterTagExecute.m in Sources */,
+				059144213858285753F7FB0145440215 /* BBTemplaterTagForeach.m in Sources */,
+				81DE18902533FB239E1DB903F6A55E13 /* BBTemplaterTagHeader.m in Sources */,
+				2BE5A6F9481BAE3E454056FF1EB485F7 /* BBTemplaterTagOut.m in Sources */,
+				F824FF68C428F3B487FBE4EACAF6913A /* BBTemplaterTagParam.m in Sources */,
+				DDCFA0C076397D357828C1DC574EFCD7 /* BBTemplaterTagPreference.m in Sources */,
+				A0C9721994F593C9038326991AA905F0 /* BBTemplaterTagProvider.m in Sources */,
+				A0AA73765AEB8BB153176F6FF4E7BE33 /* BBTemplaterTagSearch.m in Sources */,
+				9916F04D54B06F16AA68B0640AB58925 /* BBTemplaterTagsProcessor.m in Sources */,
+				FAB5CEAF1CA9BECF0005EB48 /* BBTemplaterFunctionValueAnalyzer.m in Sources */,
+				467A85D3A4E5AE319558841D53B816A8 /* BBTemplaterTagsProvider.m in Sources */,
+				E8243C8049C37D162F0EDFAF705B6E4A /* BBTemplaterTagSubaccount.m in Sources */,
+				F30D3D4B4D1EBC7632C0979528C4DF1C /* BBTemplaterTagToast.m in Sources */,
+				164E6966F700A63CF5EDEBA4EB610E23 /* BBTemplaterTagVar.m in Sources */,
+				BFE501672EBC36E4AB7B86D3672985D6 /* BBTemplaterTagXml.m in Sources */,
+				E6385A943D8ABA75CC22507A23D6F287 /* BBTemplaterTagXpath.m in Sources */,
+				F57D38E9C56DC05C67D350E2F919D0BA /* BBTemplaterValueProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1950FC411AA4C06347571F6D893E997F /* Sources */ = {
+		3FB866819319BBEA2B322E845EFBFFC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E8EF5261AAD45BE6C6A40C25542535 /* Sequencer-dummy.m in Sources */,
-				FFA560BD755F395DB25F09A3E3776B4E /* Sequencer.m in Sources */,
+				50DBB55FF51E4091DAB51B5B00349E3F /* Sequencer-dummy.m in Sources */,
+				BAC2347E82058B1A3F8FA54636A94343 /* Sequencer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		552851BBF433FB5B531D40E45D3FB2BB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78DC55EDEDCF5CA1A19FF4CB0FF35263 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B61865EE1E842EBADCD8DAC27FDD6C51 /* BBTemplater-dummy.m in Sources */,
-				5879106037CE61E9237E07467DAA1A62 /* BBTemplater.m in Sources */,
-				C337169C767B2860F2B9F886D181B316 /* BBTemplaterContext.m in Sources */,
-				A4E391B73F7419D9BD0825E966F42F00 /* BBTemplaterErrors.m in Sources */,
-				E96B180F9105EB8A33E653CF17C86BCE /* BBTemplaterFunctions.m in Sources */,
-				3B42BBA8479E21974F9847D8E926D4B6 /* BBTemplaterGenericValueAnalyzer.m in Sources */,
-				CC1D359A29C992DC07A82E3E6F8DF48E /* BBTemplaterGroupValueAnalyzer.m in Sources */,
-				2ECE858CE142A845E518FA3F0936B9F0 /* BBTemplaterPhoneByValueAnalyzer.m in Sources */,
-				A69F072D8D18F08AF72DF329EFB21AA1 /* BBTemplaterPhoneValueAnalyzer.m in Sources */,
-				7E7800E3C6694E549CAE4F81D072410C /* BBTemplaterResultValueAnalyzer.m in Sources */,
-				89C95C4851E2F565C8835DDB6F40B730 /* BBTemplaterStringUtils.m in Sources */,
-				84DD56EA090178C9B3587BBFA6A0106C /* BBTemplaterTag.m in Sources */,
-				C032CE84E79B658FD57C0B4CFF51F3FF /* BBTemplaterTagCallback.m in Sources */,
-				C24A13ECC3FE40C80AEB00E2885B7148 /* BBTemplaterTagElse.m in Sources */,
-				E93A2291E06C4F7C371601E9B9286CBB /* BBTemplaterTagException.m in Sources */,
-				2A7DA6E737DD314E4CB3F39290C19C6F /* BBTemplaterTagExecute.m in Sources */,
-				1BF8058A77882D1A6E43E2158C3B8E39 /* BBTemplaterTagForeach.m in Sources */,
-				C36D73B3F13099F15727FEDF988BF717 /* BBTemplaterTagHeader.m in Sources */,
-				9AD43C2855F0EC3D42EEEDAA36243E3C /* BBTemplaterTagOut.m in Sources */,
-				9F93D8AFAA38E3E447210106B3AE9F84 /* BBTemplaterTagParam.m in Sources */,
-				382BFD8C2F2B40AB13C567E6B1FE3C31 /* BBTemplaterTagPreference.m in Sources */,
-				D7ADC8C8603D23F3A3D67C5660DA3AAF /* BBTemplaterTagProvider.m in Sources */,
-				A5C9CBE1EC95CBAE1E2AB71B432286F8 /* BBTemplaterTagSearch.m in Sources */,
-				4A570A6AAF706CBE0583025D2C49F0E4 /* BBTemplaterTagsProcessor.m in Sources */,
-				452E836762E24738B6A54C3866BA0D3D /* BBTemplaterTagsProvider.m in Sources */,
-				94AB00683F0DB82EA76FB9A234581453 /* BBTemplaterTagSubaccount.m in Sources */,
-				2DD8B18103193D8ED330313F30DCEE11 /* BBTemplaterTagToast.m in Sources */,
-				0BBAEFEEA1F5BEFCF3218FACBA3C0C19 /* BBTemplaterTagVar.m in Sources */,
-				C3E7B1AD1B2BBFE1E98AFBAAD3188AF4 /* BBTemplaterTagXml.m in Sources */,
-				7959B4397F9021D2E34922E3D98FC502 /* BBTemplaterTagXpath.m in Sources */,
-				CE0D20D957D906C43761A83B85EA8547 /* BBTemplaterValueProcessor.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		974E88E5663DFE3E0D192AE9C6673D30 /* Sources */ = {
+		BB89D2B4FF61711DA762366DA97A99C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -875,50 +867,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CAF47AF69FEE52B8B9EF1FA53BF52057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEF6774FEC50F59F9A30E0963674354 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C734BD414CB15D330A2764D8D2F8B28 /* LPXML-dummy.m in Sources */,
+				56E49F8E281325592F17675A221350E7 /* LPXML.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		13588E55F6A12B2B772CFD6775BB6AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LPXML;
+			target = 855B5CE24BE5A112084AE920B4501CDB /* LPXML */;
+			targetProxy = 3FFE5C3EC6EBA2D09010B431D6DAE4F5 /* PBXContainerItemProxy */;
+		};
 		25AD292FA43FAFAFE12559F408660700 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BBTemplater;
-			target = 9F6E074EF22E1D9B744A1C4472C360B9 /* BBTemplater */;
+			target = C7A0B2731D6100016C0D8A2226741564 /* BBTemplater */;
 			targetProxy = 94FCD35C7797258B8066787247EF44FB /* PBXContainerItemProxy */;
 		};
 		31F9D65050712E9BB9237C3B26B9BA6E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Sequencer;
-			target = 5186B516C350A83F4133098E65F7513C /* Sequencer */;
+			target = A0652A044FFDC871865B8BEE893D1C5C /* Sequencer */;
 			targetProxy = 48A9CAB705D731B1C497B3DD69FCCE53 /* PBXContainerItemProxy */;
 		};
-		531B6DE432ADF9859725DA814DC5C495 /* PBXTargetDependency */ = {
+		3E7BC503F04A4DD4E29D5751C1DB7CE8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "BBTemplater-BBTemplater";
-			target = 2640853FF20AADDB8CC71FDB0D4C3E52 /* BBTemplater-BBTemplater */;
-			targetProxy = D638B3001B4A385DCE1776F2E0108518 /* PBXContainerItemProxy */;
+			name = Sequencer;
+			target = A0652A044FFDC871865B8BEE893D1C5C /* Sequencer */;
+			targetProxy = 97073B24C6BE83FB8CE5D852BBC6ED0E /* PBXContainerItemProxy */;
 		};
 		7694F03E0B69395313778CFD3949D2B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LPXML;
-			target = ED7BC433EA76827636795FC236105472 /* LPXML */;
+			target = 855B5CE24BE5A112084AE920B4501CDB /* LPXML */;
 			targetProxy = 08EAD6BD2A6D739692D6C910D212FE65 /* PBXContainerItemProxy */;
 		};
-		9CE82B98A214A3D5DDAF73F5CA51D904 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LPXML;
-			target = ED7BC433EA76827636795FC236105472 /* LPXML */;
-			targetProxy = 61EFAC68705CBC98D6EED1F1B1359E75 /* PBXContainerItemProxy */;
-		};
-		D6C7D0DA63B0865138972F1737FF814A /* PBXTargetDependency */ = {
+		E40A4995E86656C8138CCEB48A20095E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "LPXML-LPXML";
-			target = C0FCFA0AD44219752BC702B88DBB87B8 /* LPXML-LPXML */;
-			targetProxy = EC6BE7B2E405B867FC00AEB3632A0716 /* PBXContainerItemProxy */;
+			target = 030A0284F54A6ED435DFF28CBF274724 /* LPXML-LPXML */;
+			targetProxy = FD30245891FC1E28D37482288FBF11CE /* PBXContainerItemProxy */;
 		};
-		D88E3CAFE6AE87A944C49A1A8C4CC57E /* PBXTargetDependency */ = {
+		F8A04C4A7E60DCD28ADC9B4DA430E158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Sequencer;
-			target = 5186B516C350A83F4133098E65F7513C /* Sequencer */;
-			targetProxy = 4B599434048F25BD478A964E6F6F0D7E /* PBXContainerItemProxy */;
+			name = "BBTemplater-BBTemplater";
+			target = FA8DFB2ACD02286C3C8D932C4CF93936 /* BBTemplater-BBTemplater */;
+			targetProxy = 91420CFF59AD82A2F93ED9B59CB31598 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1026,7 +1034,58 @@
 			};
 			name = Debug;
 		};
-		2A89A87EA7193747E3A5AD5B3B484CD5 /* Debug */ = {
+		1388925EA0940569572D21A81F13EACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086BB28AC777948C4951440C1A38B021 /* BBTemplater.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = BBTemplater;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		2617316AF818048181A0E22CD790EEED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LPXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		583B418584FA2D1700A62FB0A45923D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086BB28AC777948C4951440C1A38B021 /* BBTemplater.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BBTemplater/BBTemplater-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BBTemplater/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BBTemplater/BBTemplater.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BBTemplater;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F9B17E65D5447A154F06E62A223BBCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 086BB28AC777948C4951440C1A38B021 /* BBTemplater.xcconfig */;
 			buildSettings = {
@@ -1053,112 +1112,7 @@
 			};
 			name = Debug;
 		};
-		546D3B41BBDC563292DA7F23870C7670 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LPXML/LPXML-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LPXML/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LPXML/LPXML.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = LPXML;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		569B90302D2597E2338ABF32A81886CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = LPXML;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		5A445063BC0DC89E704A886500EEEE05 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D32B9D07D1C7316C3B5F46E37ED189A /* Sequencer.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Sequencer/Sequencer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Sequencer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Sequencer/Sequencer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Sequencer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6668B793D401761D7BB3D95AA9AA39AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 086BB28AC777948C4951440C1A38B021 /* BBTemplater.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BBTemplater;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		6E69A032C8FA8ACC3E3F79E594C9AEB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LPXML/LPXML-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LPXML/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LPXML/LPXML.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = LPXML;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		96B9EE3EC158C19B04DCF9BDE9167449 /* Release */ = {
+		7819F8075DFB86C20A50217671D86581 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D32B9D07D1C7316C3B5F46E37ED189A /* Sequencer.xcconfig */;
 			buildSettings = {
@@ -1185,15 +1139,30 @@
 			};
 			name = Release;
 		};
-		AB490B82452A8CD6F5DB92CCB1D09FE7 /* Debug */ = {
+		879335B6230F01FE5113D97A0551B076 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
+			baseConfigurationReference = 0D32B9D07D1C7316C3B5F46E37ED189A /* Sequencer.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = LPXML;
+				GCC_PREFIX_HEADER = "Target Support Files/Sequencer/Sequencer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sequencer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sequencer/Sequencer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Sequencer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1227,9 +1196,9 @@
 			};
 			name = Debug;
 		};
-		F0579E7BA7A96F150EE7D62D2EC37DD0 /* Release */ = {
+		C05C3C0D3E4A8DB91931CF701C598E0C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 086BB28AC777948C4951440C1A38B021 /* BBTemplater.xcconfig */;
+			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1238,14 +1207,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BBTemplater/BBTemplater-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BBTemplater/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LPXML/LPXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPXML/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BBTemplater/BBTemplater.modulemap";
+				MODULEMAP_FILE = "Target Support Files/LPXML/LPXML.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BBTemplater;
+				PRODUCT_NAME = LPXML;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1254,7 +1223,46 @@
 			};
 			name = Release;
 		};
-		F861E45E5ECAB8B2F9D1E67988C5821F /* Release */ = {
+		E5025860E19DC383F1CBF2A028375E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = LPXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		EB3F7DEC3CC8A0DCB4A74BE3FFE31F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E903DCA91E4B56F4EFEEEC46CC2FF195 /* LPXML.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LPXML/LPXML-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPXML/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LPXML/LPXML.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = LPXML;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1D3FF2C72DE90EA4F1BAC45A6A10CD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 086BB28AC777948C4951440C1A38B021 /* BBTemplater.xcconfig */;
 			buildSettings = {
@@ -1264,11 +1272,20 @@
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E91D6AF6EB901A3639FAAC3AEA48EB4 /* Build configuration list for PBXNativeTarget "Sequencer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879335B6230F01FE5113D97A0551B076 /* Debug */,
+				7819F8075DFB86C20A50217671D86581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1278,20 +1295,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DA3CAAA3A256123AFB6413706098F5F /* Build configuration list for PBXNativeTarget "BBTemplater" */ = {
+		53ECE76EB079B1D56021F1AE163F7B3E /* Build configuration list for PBXNativeTarget "LPXML-LPXML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A89A87EA7193747E3A5AD5B3B484CD5 /* Debug */,
-				F0579E7BA7A96F150EE7D62D2EC37DD0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3AA566DFDDDBB53097E7BBE79F45C209 /* Build configuration list for PBXNativeTarget "LPXML" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				546D3B41BBDC563292DA7F23870C7670 /* Debug */,
-				6E69A032C8FA8ACC3E3F79E594C9AEB4 /* Release */,
+				2617316AF818048181A0E22CD790EEED /* Debug */,
+				E5025860E19DC383F1CBF2A028375E9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1305,29 +1313,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E23DDF6006D43DC9DD678BDB5EDBA77 /* Build configuration list for PBXNativeTarget "BBTemplater-BBTemplater" */ = {
+		B05FD0EA72403CB63CD7413BEB3259C9 /* Build configuration list for PBXNativeTarget "BBTemplater-BBTemplater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6668B793D401761D7BB3D95AA9AA39AB /* Debug */,
-				F861E45E5ECAB8B2F9D1E67988C5821F /* Release */,
+				F1D3FF2C72DE90EA4F1BAC45A6A10CD3 /* Debug */,
+				1388925EA0940569572D21A81F13EACD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E663408DB5CB10C55541DED165339010 /* Build configuration list for PBXNativeTarget "Sequencer" */ = {
+		BA9337948DE0140198522310029FA855 /* Build configuration list for PBXNativeTarget "BBTemplater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A445063BC0DC89E704A886500EEEE05 /* Debug */,
-				96B9EE3EC158C19B04DCF9BDE9167449 /* Release */,
+				6F9B17E65D5447A154F06E62A223BBCC /* Debug */,
+				583B418584FA2D1700A62FB0A45923D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F90456B1661B252C217C9F5431D41897 /* Build configuration list for PBXNativeTarget "LPXML-LPXML" */ = {
+		E20ADA70A363699067AE7CC57F13FBDB /* Build configuration list for PBXNativeTarget "LPXML" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB490B82452A8CD6F5DB92CCB1D09FE7 /* Debug */,
-				569B90302D2597E2338ABF32A81886CE /* Release */,
+				EB3F7DEC3CC8A0DCB4A74BE3FFE31F08 /* Debug */,
+				C05C3C0D3E4A8DB91931CF701C598E0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

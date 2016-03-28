@@ -81,4 +81,10 @@
 	XCTAssertTrue([res isEqualToString:@"766555"]);
 }
 
+- (void)testFunction {
+	BBTemplaterContext *context = [[BBTemplaterContext alloc] init];
+	NSString *res = [[BBTemplaterValueProcessor instance] valueForString:@"${function.time}" inContext:context];
+	XCTAssertNotNil(res);
+}
+
 @end

@@ -9,7 +9,6 @@
 #import "BBTemplaterTagsProvider.h"
 #import "BBTemplaterTag.h"
 #import "BBTemplaterTagCallback.h"
-#import "BBTemplaterTagDialog.h"
 #import "BBTemplaterTagElse.h"
 #import "BBTemplaterTagException.h"
 #import "BBTemplaterTagExecute.h"

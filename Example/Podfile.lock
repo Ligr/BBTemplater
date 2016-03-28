@@ -1,5 +1,5 @@
 PODS:
-  - BBTemplater (0.1.1):
+  - BBTemplater (0.1.6):
     - LPXML (~> 0.1)
     - Sequencer (~> 1.0)
   - LPXML (0.1.0)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BBTemplater: acbd7eaa9df680b1c8d02777ac8803f0be9c6ade
+  BBTemplater: 40ceb5a0a97321989499e243e23f8867f685b531
   LPXML: 350d6dc16cb0d493655a9127860ff70ef22cc60e
   Sequencer: 53040fea35ecde55ba9cdb3a505a00cfb0e797b2
 

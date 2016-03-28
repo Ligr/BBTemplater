@@ -13,6 +13,7 @@
 #import "BBTemplaterPhoneValueAnalyzer.h"
 #import "BBTemplaterResultValueAnalyzer.h"
 #import "BBTemplaterGroupValueAnalyzer.h"
+#import "BBTemplaterFunctionValueAnalyzer.h"
 
 @interface BBTemplaterValueProcessor () {
 	NSArray *_valueAnalyzers;
@@ -79,6 +80,7 @@
 		[analyzers addObject:[BBTemplaterPhoneByValueAnalyzer new]];
 		[analyzers addObject:[BBTemplaterPhoneValueAnalyzer new]];
 		[analyzers addObject:[BBTemplaterGenericValueAnalyzer new]];
+		[analyzers addObject:[BBTemplaterFunctionValueAnalyzer new]];
 		_valueAnalyzers = analyzers;
 		_valueRegex = [NSRegularExpression regularExpressionWithPattern:@"\\$\\{[\\d\\w\\.]*\\}" options:NSRegularExpressionCaseInsensitive error:nil];
 	}
