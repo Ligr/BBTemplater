@@ -79,8 +79,8 @@
 		[analyzers addObject:[BBTemplaterResultValueAnalyzer new]];
 		[analyzers addObject:[BBTemplaterPhoneByValueAnalyzer new]];
 		[analyzers addObject:[BBTemplaterPhoneValueAnalyzer new]];
-		[analyzers addObject:[BBTemplaterGenericValueAnalyzer new]];
 		[analyzers addObject:[BBTemplaterFunctionValueAnalyzer new]];
+		[analyzers addObject:[BBTemplaterGenericValueAnalyzer new]];
 		_valueAnalyzers = analyzers;
 		_valueRegex = [NSRegularExpression regularExpressionWithPattern:@"\\$\\{[\\d\\w\\.]*\\}" options:NSRegularExpressionCaseInsensitive error:nil];
 	}
