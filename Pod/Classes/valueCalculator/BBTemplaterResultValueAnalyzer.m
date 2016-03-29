@@ -25,7 +25,7 @@
 				} else {
 					NSLog(@"'%@' is out of bounds", key);
 				}
-			} else if ([arrayIndex integerValue] == 0) {
+			} else if ([arrayIndex integerValue] == 1) {
 				result = data;
 			} else {
 				NSLog(@"can't get '%@' because data is not an array", key);
