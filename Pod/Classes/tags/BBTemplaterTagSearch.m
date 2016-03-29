@@ -11,6 +11,7 @@
 #import "BBTemplaterStringUtils.h"
 #import "BBTemplaterFunctions.h"
 #import "BBTemplaterTagElse.h"
+#import "BBTemplaterErrors.h"
 
 @interface BBTemplaterTagSearch () {
 	BBTemplaterTagElse *_elseTag;
@@ -42,6 +43,12 @@
 	NSString *tagValue = self.value;
 	__block id result = tagValue ? : nil;
 	NSString *initialData = tagValue ? : data;
+	
+	if (![initialData isKindOfClass:[NSString class]]) {
+		callback(nil, [BBTemplaterErrors invalidFormatError:@"[BBTemplaterTagSearch][ERROR]: unsupported input data type"]);
+		return;
+	}
+	
 	NSString *srcString = initialData;
 	NSString *start = self.start;
 	NSString *end = self.end;

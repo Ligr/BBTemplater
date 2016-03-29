@@ -11,7 +11,7 @@
 @implementation BBTemplaterPhoneByValueAnalyzer
 
 - (id)init {
-	self = [super initWithCountryCodeLength:3 providerCodeLegth:3];
+	self = [super initWithCountryCodeLength:3 providerCodeLegth:2];
 	if (self) {
 		self.countryCodeKey = @"phone.countryBY";
 		self.providerCodeKey = @"phone.codeBY";

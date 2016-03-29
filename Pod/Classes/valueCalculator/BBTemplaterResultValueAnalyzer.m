@@ -16,16 +16,17 @@
 	NSString *result = nil;
 	NSNumber *arrayIndex = [BBTemplaterStringUtils extrackIndexFromString:key];
 	if ([key hasPrefix:@"result."] && (arrayIndex || [key isEqualToString:@"result.length"])) {
+		arrayIndex = @([arrayIndex integerValue] - 1);
 		id data = [context data];
 		if (arrayIndex) {
 			if ([data isKindOfClass:[NSArray class]]) {
 				NSArray *dataArr = (NSArray *)data;
-				if (dataArr.count > [arrayIndex integerValue]) {
+				if (dataArr.count > [arrayIndex integerValue] && [arrayIndex integerValue] >= 0) {
 					result = dataArr[[arrayIndex integerValue]];
 				} else {
 					NSLog(@"'%@' is out of bounds", key);
 				}
-			} else if ([arrayIndex integerValue] == 1) {
+			} else if ([arrayIndex integerValue] == 0) {
 				result = data;
 			} else {
 				NSLog(@"can't get '%@' because data is not an array", key);
