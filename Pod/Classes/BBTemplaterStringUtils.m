@@ -29,8 +29,10 @@
 
 + (NSString *)stripHtmlFromString:(NSString *)string {
 	NSRange r;
-	while (string && (r = [string rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound) {
-		string = [string stringByReplacingCharactersInRange:r withString:@""];
+	if ([string isKindOfClass:[NSString class]]) {
+		while (string && (r = [string rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound) {
+			string = [string stringByReplacingCharactersInRange:r withString:@""];
+		}
 	}
 	return string;
 }
