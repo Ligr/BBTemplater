@@ -9,6 +9,7 @@
 #import "BBTemplaterContext.h"
 
 @interface BBTemplaterContext () {
+	BBTemplaterValueProcessor *_valueProcessor;
 	NSMutableDictionary *_storage;
 	NSMutableDictionary *_outStorage;
 	NSMutableArray *_accounts;
@@ -19,6 +20,22 @@
 @end
 
 @implementation BBTemplaterContext
+
+- (id)initWithValueProcessor:(BBTemplaterValueProcessor *)processor {
+	self = [super init];
+	if (self) {
+		_valueProcessor = processor;
+	}
+	return self;
+}
+
+- (id)init {
+	self = [self initWithValueProcessor:[BBTemplaterValueProcessor new]];
+	if (self) {
+		
+	}
+	return self;
+}
 
 - (void)storeValue:(id)value forKey:(NSString *)key {
 	if (value) {
@@ -136,6 +153,10 @@
 
 - (id)searchGroup {
 	return [_searchGroupStack lastObject];
+}
+
+- (id)evaluateValue:(NSString *)value {
+	[_valueProcessor valueForString:value inContext:self];
 }
 
 #pragma mark - Private

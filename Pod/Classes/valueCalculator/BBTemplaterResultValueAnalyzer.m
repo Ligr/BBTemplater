@@ -9,6 +9,7 @@
 #import "BBTemplaterResultValueAnalyzer.h"
 
 #import "BBTemplaterStringUtils.h"
+#import "BBTemplaterContext.h"
 
 @implementation BBTemplaterResultValueAnalyzer
 

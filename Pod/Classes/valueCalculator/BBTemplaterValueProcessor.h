@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BBTemplaterContext.h"
+#import "BBTemplaterValueAnalyzer.h"
+
+@class BBTemplaterContext;
 
 @interface BBTemplaterValueProcessor : NSObject
 
-+ (instancetype)instance;
-
+- (void)registerValueAnalyzer:(id<BBTemplaterValueAnalyzer>)valueAnalyzer;
 - (NSString *)valueForString:(NSString *)string inContext:(BBTemplaterContext *)context;
 
 @end

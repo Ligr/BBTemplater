@@ -11,6 +11,7 @@
 #import "BBTemplaterTag.h"
 #import "BBTemplaterTagsProvider.h"
 #import "BBTemplaterTagsProcessor.h"
+#import "BBTEmplaterValueProcessor.h"
 
 @interface BBTemplater () <NSXMLParserDelegate> {
 	NSString *_data;
@@ -20,6 +21,7 @@
 	BBTemplaterTagsProvider *_tagsProvider;
 	BBTemplaterContext *_context;
 	NSMutableArray *_tagsStack;
+	NSArray *_additionalValueAnalyzers;
 	void(^_templaterCallback)(NSError *error);
 }
 
@@ -28,10 +30,15 @@
 @implementation BBTemplater
 
 - (id)initWithTemplate:(NSString *)templateStr data:(NSString *)data {
+	return [self initWithTemplate:templateStr data:data valueAnalyzers:nil];
+}
+
+- (id)initWithTemplate:(NSString *)templateStr data:(NSString *)data valueAnalyzers:(NSArray *)valueAnalyzers {
 	self = [super init];
 	if (self) {
 		_template = templateStr;
 		_data = data;
+		_additionalValueAnalyzers = valueAnalyzers;
 		[self setup];
 	}
 	return self;
@@ -73,9 +80,13 @@
 #pragma mark - Private
 
 - (void)setup {
-	_tagsProvider = [BBTemplaterTagsProvider new];
-	_context = [BBTemplaterContext new];
+	BBTemplaterValueProcessor *valueProcessor = [[BBTemplaterValueProcessor alloc] init];
+	for (id<BBTemplaterValueAnalyzer> analyzer in _additionalValueAnalyzers) {
+		[valueProcessor registerValueAnalyzer:analyzer];
+	}
+	_context = [[BBTemplaterContext alloc] initWithValueProcessor:valueProcessor];
 	_context.dataEncoding = NSUTF8StringEncoding;
+	_tagsProvider = [BBTemplaterTagsProvider new];
 	_tagsStack = [NSMutableArray new];
 }
 

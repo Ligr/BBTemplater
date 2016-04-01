@@ -11,6 +11,8 @@
 @interface BBTemplater : NSObject
 
 - (id)initWithTemplate:(NSString *)templateStr data:(NSString *)data;
+- (id)initWithTemplate:(NSString *)templateStr data:(NSString *)data valueAnalyzers:(NSArray *)valueAnalyzers;
+
 - (void)process:(void(^)(NSError *error))callback;
 - (void)registerVariables:(NSDictionary *)variables;
 - (void)setDataEncoding:(NSStringEncoding)encoding;

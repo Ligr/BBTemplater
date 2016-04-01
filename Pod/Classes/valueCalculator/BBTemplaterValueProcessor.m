@@ -8,6 +8,7 @@
 
 #import "BBTemplaterValueProcessor.h"
 
+#import "BBTemplaterContext.h"
 #import "BBTemplaterGenericValueAnalyzer.h"
 #import "BBTemplaterPhoneByValueAnalyzer.h"
 #import "BBTemplaterPhoneValueAnalyzer.h"
@@ -56,6 +57,16 @@
 		resultString = string;
 	}
 	return resultString;
+}
+
+- (void)registerValueAnalyzer:(id<BBTemplaterValueAnalyzer>)valueAnalyzer {
+	NSMutableArray *mutableArr = [_valueAnalyzers mutableCopy];
+	if (mutableArr.count > 0) {
+		[mutableArr insertObject:valueAnalyzer atIndex:0];
+	} else {
+		[mutableArr addObject:valueAnalyzer];
+	}
+	_valueAnalyzers = mutableArr;
 }
 
 #pragma mark - Private

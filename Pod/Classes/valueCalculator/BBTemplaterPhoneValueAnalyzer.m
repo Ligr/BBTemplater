@@ -8,6 +8,8 @@
 
 #import "BBtemplaterPhoneValueAnalyzer.h"
 
+#import "BBTemplaterContext.h"
+
 @interface BBTemplaterPhoneValueAnalyzer () {
 	NSInteger _countryCodeLength;
 	NSInteger _providerCodeLength;

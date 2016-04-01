@@ -9,6 +9,7 @@
 #import "BBTemplaterGroupValueAnalyzer.h"
 
 #import "BBTemplaterStringUtils.h"
+#import "BBTemplaterContext.h"
 
 @implementation BBTemplaterGroupValueAnalyzer
 

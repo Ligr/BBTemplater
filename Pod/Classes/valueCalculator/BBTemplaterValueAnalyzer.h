@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BBTemplaterContext.h"
+@class BBTemplaterContext;
 
 @protocol BBTemplaterValueAnalyzer <NSObject>
 
