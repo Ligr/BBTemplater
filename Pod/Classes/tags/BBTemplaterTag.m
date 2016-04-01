@@ -53,7 +53,7 @@
 - (NSString *)name {
 	NSString *name = self.attributes[@"name"];
 	if (name) {
-		name = [[BBTemplaterValueProcessor instance] valueForString:name inContext:self.context];
+		name = [self.context evaluateValue:name];
 	}
 	return name;
 }
@@ -61,7 +61,7 @@
 - (NSString *)value {
 	NSString *value = self.attributes[@"value"];
 	if (value) {
-		value = [[BBTemplaterValueProcessor instance] valueForString:value inContext:self.context];
+		value = [self.context evaluateValue:value];
 	}
 	return value;
 }
@@ -69,7 +69,7 @@
 - (NSString *)function {
 	NSString *function = self.attributes[@"function"];
 	if (function) {
-		function = [[BBTemplaterValueProcessor instance] valueForString:function inContext:self.context];
+		function = [self.context evaluateValue:function];
 	}
 	return function;
 }
@@ -77,7 +77,7 @@
 - (NSString *)url {
 	NSString *url = self.attributes[@"url"];
 	if (url) {
-		url = [[BBTemplaterValueProcessor instance] valueForString:url inContext:self.context];
+		url = [self.context evaluateValue:url];
 	}
 	return url;
 }

@@ -10,6 +10,7 @@
 #import <XCTest/XCTest.h>
 
 #import "BBTemplaterValueProcessor.h"
+#import "BBTemplaterContext.h"
 
 @interface ValueProcessorTests : XCTestCase
 
@@ -29,7 +30,7 @@
 
 - (void)testSimpleValue {
 	BBTemplaterContext *context = [[BBTemplaterContext alloc] init];
-	NSString *res = [[BBTemplaterValueProcessor instance] valueForString:@"test" inContext:context];
+	NSString *res = [context evaluateValue:@"test"];
 	XCTAssertTrue([res isEqualToString:@"test"]);
 }
 
@@ -38,7 +39,7 @@
 	[context addValue:@"val1" toArrayWithName:@"arr"];
 	[context addValue:@"val2" toArrayWithName:@"arr"];
 	[context addValue:@"val3" toArrayWithName:@"arr"];
-	NSString *res = [[BBTemplaterValueProcessor instance] valueForString:@"${arr.1}" inContext:context];
+	NSString *res = [context evaluateValue:@"${arr.1}"];
 	XCTAssertTrue([res isEqualToString:@"val2"]);
 }
 
@@ -46,13 +47,13 @@
 	BBTemplaterContext *context = [[BBTemplaterContext alloc] init];
 	NSArray *data = @[@"val1", @"val2", @"val3"];
 	[context pushData:data];
-	NSString *res = [[BBTemplaterValueProcessor instance] valueForString:@"${result.1}" inContext:context];
+	NSString *res = [context evaluateValue:@"${result.2}"];
 	XCTAssertTrue([res isEqualToString:@"val2"]);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${result.length}" inContext:context];
+	res = [context evaluateValue:@"${result.length}"];
 	XCTAssertTrue([res isEqualToString:@"3"]);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${result.3}" inContext:context];
+	res = [context evaluateValue:@"${result.4}"];
 	XCTAssertNil(res);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${array.1}" inContext:context];
+	res = [context evaluateValue:@"${array.1}"];
 	XCTAssertNil(res);
 }
 
@@ -60,30 +61,30 @@
 	BBTemplaterContext *context = [[BBTemplaterContext alloc] init];
 	NSArray *data = @[@"val1", @"val2", @"val3"];
 	[context pushSearchGroup:data];
-	NSString *res = [[BBTemplaterValueProcessor instance] valueForString:@"${group.1}" inContext:context];
+	NSString *res = [context evaluateValue:@"${group.1}"];
 	XCTAssertTrue([res isEqualToString:@"val2"]);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${group.length}" inContext:context];
+	res = [context evaluateValue:@"${group.length}"];
 	XCTAssertTrue([res isEqualToString:@"3"]);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${group.3}" inContext:context];
+	res = [context evaluateValue:@"${group.3}"];
 	XCTAssertNil(res);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${array.1}" inContext:context];
+	res = [context evaluateValue:@"${array.1}"];
 	XCTAssertNil(res);
 }
 
 - (void)testPhoneBY {
 	BBTemplaterContext *context = [[BBTemplaterContext alloc] init];
 	[context storeValue:@"+375 29 7766555" forKey:@"account.login"];
-	NSString *res = [[BBTemplaterValueProcessor instance] valueForString:@"${phone.countryBY}" inContext:context];
+	NSString *res = [context evaluateValue:@"${phone.countryBY}"];
 	XCTAssertTrue([res isEqualToString:@"375"]);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${phone.codeBY}" inContext:context];
-	XCTAssertTrue([res isEqualToString:@"297"]);
-	res = [[BBTemplaterValueProcessor instance] valueForString:@"${phone.numberBY}" inContext:context];
-	XCTAssertTrue([res isEqualToString:@"766555"]);
+	res = [context evaluateValue:@"${phone.codeBY}"];
+	XCTAssertTrue([res isEqualToString:@"29"]);
+	res = [context evaluateValue:@"${phone.numberBY}"];
+	XCTAssertTrue([res isEqualToString:@"7766555"]);
 }
 
 - (void)testFunction {
 	BBTemplaterContext *context = [[BBTemplaterContext alloc] init];
-	NSString *res = [[BBTemplaterValueProcessor instance] valueForString:@"${function.time}" inContext:context];
+	NSString *res = [context evaluateValue:@"${function.time}"];
 	XCTAssertNotNil(res);
 }
 

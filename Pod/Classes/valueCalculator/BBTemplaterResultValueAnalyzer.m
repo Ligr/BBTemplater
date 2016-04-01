@@ -17,7 +17,9 @@
 	NSString *result = nil;
 	NSNumber *arrayIndex = [BBTemplaterStringUtils extrackIndexFromString:key];
 	if ([key hasPrefix:@"result."] && (arrayIndex || [key isEqualToString:@"result.length"])) {
-		arrayIndex = @([arrayIndex integerValue] - 1);
+		if (arrayIndex) {
+			arrayIndex = @([arrayIndex integerValue] - 1);
+		}
 		id data = [context data];
 		if (arrayIndex) {
 			if ([data isKindOfClass:[NSArray class]]) {

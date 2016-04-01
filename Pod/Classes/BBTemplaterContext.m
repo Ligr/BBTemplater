@@ -25,6 +25,7 @@
 	self = [super init];
 	if (self) {
 		_valueProcessor = processor;
+		[self setup];
 	}
 	return self;
 }
@@ -156,7 +157,7 @@
 }
 
 - (id)evaluateValue:(NSString *)value {
-	[_valueProcessor valueForString:value inContext:self];
+	return [_valueProcessor valueForString:value inContext:self];
 }
 
 #pragma mark - Private
@@ -168,14 +169,6 @@
 		storage[arrayName] = subArray;
 	}
 	[subArray addObject:value];
-}
-
-- (id)init {
-	self = [super init];
-	if (self) {
-		[self setup];
-	}
-	return self;
 }
 
 - (void)setup {
