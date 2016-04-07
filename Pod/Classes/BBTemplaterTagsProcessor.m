@@ -73,6 +73,11 @@
 			}
 #endif
 			if (error || (tag.required && data == nil)) {
+#if DEBUG
+				if (tag.required && data == nil) {
+					NSLog(@"\n====================\ninput data:\n%@\n==========\n%@\n==========\nresults:\n%@\nerror: %@\n====================", srcData, tag, data, error);
+				}
+#endif
 				if (!error) {
 					error = [BBTemplaterErrors requiredDataIsMissing:[NSString stringWithFormat:@"Required tag '%@' returned empty data", NSStringFromClass([tag class])]];
 				}
