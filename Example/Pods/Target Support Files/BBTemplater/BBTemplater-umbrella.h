@@ -24,6 +24,7 @@
 #import "BBTemplaterTagVar.h"
 #import "BBTemplaterTagXml.h"
 #import "BBTemplaterTagXpath.h"
+#import "BBTemplaterFunctionValueAnalyzer.h"
 #import "BBTemplaterGenericValueAnalyzer.h"
 #import "BBTemplaterGroupValueAnalyzer.h"
 #import "BBTemplaterPhoneByValueAnalyzer.h"

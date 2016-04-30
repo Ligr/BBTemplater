@@ -67,45 +67,70 @@
 	if (tag.needProcessing) {
 		[tag willStartWithData:srcData];
 		[tag process:^(id data, NSError *error) {
-#if DEBUG
-			if (error) {
-				NSLog(@"\n====================\ninput data:\n%@\n==========\n%@\n==========\nresults:\n%@\nerror: %@\n====================", srcData, tag, data, error);
-			}
-#endif
 			if (error || (tag.required && data == nil)) {
+
+#if DEBUG
+				if (error) {
+					NSLog(@"\n====================\ninput data:\n%@\n==========\n%@\n==========\nresults:\n%@\nerror: %@\n====================", srcData, tag, data, error);
+				}
+#endif
+
 #if DEBUG
 				if (tag.required && data == nil) {
 					NSLog(@"\n====================\ninput data:\n%@\n==========\n%@\n==========\nresults:\n%@\nerror: %@\n====================", srcData, tag, data, error);
 				}
 #endif
-				if (!error) {
+				if (tag.onErrorMessage) {
+					error = [BBTemplaterErrors genericError:tag.onErrorMessage];
+				} else if (!error) {
 					error = [BBTemplaterErrors requiredDataIsMissing:[NSString stringWithFormat:@"Required tag '%@' returned empty data", NSStringFromClass([tag class])]];
 				}
+				
 				[tag didEnd];
-				callback(error);
-			} else if (tag.needSubtagsProcessing) {
-				Sequencer *sequencer = [[Sequencer alloc] init];
-				for (BBTemplaterTag *subTag in tag.subtags) {
-					[sequencer enqueueStep:^(id result, SequencerCompletion completion) {
-						if (result) {
-							completion(result);
-						} else {
-							[self processTag:subTag withData:data callback:^(NSError *error) {
-								completion(error);
-							}];
-						}
+				
+				if (tag.onErrorCallback) {
+					BBTemplaterTag *errorCallback = tag.onErrorCallback;
+					[errorCallback process:^(id data, NSError *error) {
+						callback(error);
 					}];
+				} else {
+					callback(error);
 				}
-				[sequencer enqueueStep:^(id result, SequencerCompletion completion) {
-					[tag didEnd];
-					callback(result);
-				}];
-				dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-					[sequencer run];					
-				});
 			} else {
-				[tag didEnd];
-				callback(nil);
+				if (tag.onSuccessMessage) {
+					[tag didEnd];
+					NSError *error = [BBTemplaterErrors genericError:tag.onSuccessMessage];
+					callback(error);
+				} else if (tag.onSuccessCallback) {
+					[tag didEnd];
+					BBTemplaterTag *successCallback = tag.onSuccessCallback;
+					[successCallback process:^(id data, NSError *error) {
+						callback(error);
+					}];
+				} else if (tag.needSubtagsProcessing) {
+					Sequencer *sequencer = [[Sequencer alloc] init];
+					for (BBTemplaterTag *subTag in tag.subtags) {
+						[sequencer enqueueStep:^(id result, SequencerCompletion completion) {
+							if (result) {
+								completion(result);
+							} else {
+								[self processTag:subTag withData:data callback:^(NSError *error) {
+									completion(error);
+								}];
+							}
+						}];
+					}
+					[sequencer enqueueStep:^(id result, SequencerCompletion completion) {
+						[tag didEnd];
+						callback(result);
+					}];
+					dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+						[sequencer run];					
+					});
+				} else {
+					[tag didEnd];
+					callback(nil);
+				}
 			}
 		}];
 	} else {

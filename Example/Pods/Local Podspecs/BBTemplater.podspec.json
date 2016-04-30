@@ -1,6 +1,6 @@
 {
   "name": "BBTemplater",
-  "version": "0.1.6",
+  "version": "0.1.11",
   "summary": "Engine to process data.",
   "description": "Allows to process text data with xml templates.",
   "homepage": "https://github.com/Ligr/BBTemplater",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/Ligr/BBTemplater.git",
-    "tag": "0.1.6"
+    "tag": "0.1.11"
   },
   "platforms": {
     "ios": "7.0"

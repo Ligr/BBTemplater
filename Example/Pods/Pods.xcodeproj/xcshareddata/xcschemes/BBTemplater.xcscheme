@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1D85B641745CA2B8E9411AFC'
+               BlueprintIdentifier = '339F6DEDE3C700DE87EFE4C5'
                BlueprintName = 'BBTemplater'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'BBTemplater.framework'>

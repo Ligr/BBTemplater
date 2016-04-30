@@ -20,6 +20,10 @@
 @property (nonatomic, readonly) NSString *value;
 @property (nonatomic, readonly) NSString *function;
 @property (nonatomic, readonly) NSString *url;
+@property (nonatomic, readonly) NSString *onSuccessMessage;
+@property (nonatomic, readonly) BBTemplaterTag *onSuccessCallback;
+@property (nonatomic, readonly) NSString *onErrorMessage;
+@property (nonatomic, readonly) BBTemplaterTag *onErrorCallback;
 
 @property (nonatomic, readonly) BOOL needProcessing;
 @property (nonatomic, readonly) BOOL needSubtagsProcessing;

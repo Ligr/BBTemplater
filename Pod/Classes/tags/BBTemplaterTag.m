@@ -98,7 +98,45 @@
 	return YES;
 }
 
+- (NSString *)onSuccessMessage {
+	return [self onFinishMessage:@"onSuccess"];
+}
+
+- (BBTemplaterTag *)onSuccessCallback {
+	return [self onFinishCallback:@"onSuccess"];
+}
+
+- (NSString *)onErrorMessage {
+	return [self onFinishMessage:@"onError"];
+}
+
+- (BBTemplaterTag *)onErrorCallback {
+	return [self onFinishCallback:@"onError"];
+}
+
 #pragma mark - Private
+
+- (NSString *)onFinishMessage:(NSString *)attrName {
+	NSString *onErrorAttr = self.attributes[attrName];
+	NSString *message = nil;
+	if ([onErrorAttr hasPrefix:@"exception."]) {
+		message = NSLocalizedString(onErrorAttr, nil);
+	} else if ([onErrorAttr hasPrefix:@"callback."]) {
+		// do nothing, this is callback
+	} else {
+		message = onErrorAttr;
+	}
+	return message;
+}
+
+- (BBTemplaterTag *)onFinishCallback:(NSString *)attrName {
+	NSString *onErrorAttr = self.attributes[attrName];
+	BBTemplaterTag *callback = nil;
+	if ([onErrorAttr hasPrefix:@"callback."]) {
+		callback = [self.context callbackForName:onErrorAttr];
+	}
+	return callback;
+}
 
 - (NSString *)description {
 	NSMutableString *desc = [NSMutableString new];
