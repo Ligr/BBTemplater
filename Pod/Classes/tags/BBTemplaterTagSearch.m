@@ -45,7 +45,8 @@
 	NSString *initialData = tagValue ? : data;
 	
 	if (![initialData isKindOfClass:[NSString class]]) {
-		callback(nil, [BBTemplaterErrors invalidFormatError:@"[BBTemplaterTagSearch][ERROR]: unsupported input data type"]);
+		NSLog(@"[BBTemplaterTagSearch][ERROR]: unsupported input data type");
+		callback(nil, nil);
 		return;
 	}
 	
