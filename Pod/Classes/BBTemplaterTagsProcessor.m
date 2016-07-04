@@ -97,11 +97,12 @@
 					callback(error);
 				}
 			} else {
-				if (tag.onSuccessMessage) {
+				BOOL success = data != nil;
+				if (success && tag.onSuccessMessage) {
 					[tag didEnd];
 					NSError *error = [BBTemplaterErrors genericError:tag.onSuccessMessage];
 					callback(error);
-				} else if (tag.onSuccessCallback) {
+				} else if (success && tag.onSuccessCallback) {
 					[tag didEnd];
 					BBTemplaterTag *successCallback = tag.onSuccessCallback;
 					[successCallback process:^(id data, NSError *error) {
