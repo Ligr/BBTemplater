@@ -59,7 +59,7 @@
 }
 
 - (id)init {
-	return [self initWithCountryCodeLength:3 providerCodeLegth:3];
+	return [self initWithCountryCodeLength:1 providerCodeLegth:3];
 }
 
 - (id)initWithCountryCodeLength:(NSInteger)countryCodeLength providerCodeLegth:(NSInteger)providerCodeLegth {
